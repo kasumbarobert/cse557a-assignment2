@@ -21,16 +21,40 @@
 <style>
     #map {
         width: 900px;
-        height: 500px;
+        height: 650px;
       }
 </style>
 </head>
 
 <body class="container">
-
-    <div id ="map" class="row">
-        
+    <div id ="controls" class="panel row panel-default mt-3">
+        <div id ="employees_div" class="col col-3"> 
+            <select class="form-select form-control" aria-label="Default select example" id="employees_list">
+                <option>Choose employee</option>
+            </select>
+        </div>
+        <div id ="employees_div" class="col col-3"> 
+            <select class="form-select form-control" aria-label="Default select example" id="department_list">
+                <option>Choose Department</option>
+            </select>
+        </div>
+        <div id ="employees_div" class="col col-3"> 
+            <select class="form-select form-control" aria-label="Default select example" id="date_list">
+                <option>Choose start Date</option>
+            </select>
+        </div>
+        <div id ="employees_div" class="col col-3"> 
+            <select class="form-select form-control" aria-label="Default select example">
+                <option>Choose end Date</option>
+            </select>
+        </div>
     </div>
+    <div class ="panel row panel-default">
+        <div id ="map" class="col col-12 mt-3">
+        
+        </div>
+    </div>
+   
     
    
 
@@ -43,7 +67,7 @@
 
         var map = L.map('map', {
             center: [36.06921504029343 , 24.86214637756348],
-            zoom: 13.4
+            zoom: 13.5
         })
         .addLayer(L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{
     maxZoom: 20,
@@ -72,11 +96,25 @@
         //map.addLayer(new L.KML("static/Geospatial/Abila.kml"))
        kmz.load("static/Geospatial/Kronos Island.kmz")
     
+       d3.json("/locations").then(function(locations){
+           
+            for (let x in locations) {
+                console.log(locations[x])
+                L.marker([locations[x].lat , locations[x].long])
+                    .bindTooltip(locations[x].name, 
+                    {
+                        permanent: true, 
+                        direction: 'right'
+                    }
+                ).addTo(map);
+            }
+       })
     //    map.addEventListener('mousemove', function(ev) {
     //     lat = ev.latlng.lat;
     //     lng = ev.latlng.lng;
     //     console.log(lat,lng)
     //     });
+    
     
     })
     
