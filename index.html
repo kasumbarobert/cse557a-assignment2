@@ -23,7 +23,16 @@
         width: 900px;
         height: 650px;
       }
+    
+
+        div, span {
+            padding: 1em;
+        }
+        .panel { 
+    border: 1px solid lightgray;
+}
 </style>
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body class="container">
@@ -39,14 +48,49 @@
             </select>
         </div>
         <div id ="employees_div" class="col col-3"> 
-            <select class="form-select form-control" aria-label="Default select example" id="date_list">
-                <option>Choose start Date</option>
+            <select class="form-select form-control" aria-label="Default select example" id="date">
+                    <option>Choose start Date to visualize</option>
+                    <option value="1-6-2014">1-6-2014</option>
+                    <option value="1-7-2014">1-7-2014</option>
+                    <option value="1-8-2014">1-8-2014</option>
+                    <option value="1-9-2014">1-9-2014</option>
+                    <option value="1-10-2014">1-10-2014</option>
+                    <option value="1-11-2014">1-11-2014</option>
+                    <option value="1-12-2014">1-12-2014</option>
+                    <option value="1-13-2014">1-13-2014</option>
+                    <option value="1-14-2014">1-14-2014</option>
+                    <option value="1-15-2014">1-15-2014</option>
+                    <option value="1-16-2014">1-16-2014</option>
+                    <option value="1-17-2014">1-17-2014</option>
+                    <option value="1-18-2014">1-18-2014</option>
+                    <option value="1-19-2014">1-19-2014</option>
+
             </select>
         </div>
-        <div id ="employees_div" class="col col-3"> 
+        <!-- <div id ="employees_div" class="col col-3"> 
             <select class="form-select form-control" aria-label="Default select example">
                 <option>Choose end Date</option>
             </select>
+        </div> -->
+    </div>
+
+    <div>
+        
+        
+        <h2>Business Performance Measures</h2>
+        <div  class="panel panel-default">
+            <div id="bgraph-container" class="panel-body">
+                <span class ="row">
+                    <span class ="col-4"><label >Performance Metric:</label></span>
+                    <span  class ="col-4">
+                        <select id="pmetric" class="form-select form-control" aria-label="Default select example">
+                            <option selected value="revenue">Revenue</option>
+                            <option value="frequency">Purchase Frequency</option>
+                        </select>
+                    </span>
+                </span>
+                <h3>Credit Card Histories</h3>
+            </div>
         </div>
     </div>
     <div class ="panel row panel-default">
@@ -70,13 +114,36 @@
             zoom: 13.5
         })
         .addLayer(L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{
-    maxZoom: 20,
-    subdomains:['mt0','mt1','mt2','mt3']
-}));
+            maxZoom: 20,
+            subdomains:['mt0','mt1','mt2','mt3']
+        }));
 
-// var watercolor = L.tileLayer('static/MC2-tourist.jpg', {
-// 			attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
-// 		}).addTo(m);
+        d3.json("/employees").then(function(employees) {
+               var options = d3.select("#employees_list").selectAll("option")
+               .data(employees).enter().append("option");
+               options.text(function(d) {
+                return d.FirstName+" "+d.LastName;
+                })
+                .attr("value", function(d) {
+                    return d.FirstName+" "+d.LastName;
+                });
+
+                // var departments= $.unique(employees.map(function (d) {return ;}));
+
+                // console.log(departments); 
+                d3.select("#department_list").selectAll("option")
+                .data([...new Set(d3.map(employees, function(emp){return emp.CurrentEmploymentType;}))])
+                .enter()
+                .append("option")
+                .text(function(d){return d;})
+                .attr("value",function(d){return d;});
+            }).catch(function(err) {
+                    console.log(err)
+            })
+
+
+
+
 
         
         //map.addLayer(new L.Control.fileLayerLoad("static/Geospatial/Abila.kml"))
@@ -99,12 +166,13 @@
        d3.json("/locations").then(function(locations){
            
             for (let x in locations) {
-                console.log(locations[x])
+
                 L.marker([locations[x].lat , locations[x].long])
                     .bindTooltip(locations[x].name, 
                     {
-                        permanent: true, 
-                        direction: 'right'
+                        //permanent: true, 
+                        direction: 'right',
+                        riseOnHover: true
                     }
                 ).addTo(map);
             }
@@ -119,4 +187,5 @@
     })
     
     </script>
+    <script src="script.js"></script>
 </html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Business Performance Visualization</title>
+    <!-- Skeleton code comes from code written in 457A, FL 2020 from my (Vishesh's) a1b assignment  -->
+    <!-- Other sources include my course project and a3 from 457A, FL 2020 -->
+    <style>
+        div {
+            display: inline-block;
+            border: 1px solid lightgray;
+            margin: 1em;
+        }
+
+        div, span {
+            padding: 1em;
+        }
+
+        .panel-default { 
+    border-color: #d34e4e !important;
+}
+    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<span>
+    <label>Date:</label>
+    <select id="date" >
+        <option selected value="base">Select</option>
+        <option value="1-6-2014">1-6-2014</option>
+        <option value="1-7-2014">1-7-2014</option>
+        <option value="1-8-2014">1-8-2014</option>
+        <option value="1-9-2014">1-9-2014</option>
+        <option value="1-10-2014">1-10-2014</option>
+        <option value="1-11-2014">1-11-2014</option>
+        <option value="1-12-2014">1-12-2014</option>
+        <option value="1-13-2014">1-13-2014</option>
+        <option value="1-14-2014">1-14-2014</option>
+        <option value="1-15-2014">1-15-2014</option>
+        <option value="1-16-2014">1-16-2014</option>
+        <option value="1-17-2014">1-17-2014</option>
+        <option value="1-18-2014">1-18-2014</option>
+        <option value="1-19-2014">1-19-2014</option>
+    </select>
+</span>
+
+<span>
+    <label>Performance Metric:</label>
+    <select id="pmetric" >
+        <option selected value="revenue">Revenue</option>
+        <option value="frequency">Purchase Frequency</option>
+    </select>
+</span>
+
+<br/>
+
+<h2>Business Performance Measures</h2>
+<div id="bgraph-container">
+    <h3>Credit Card Histories</h3>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/d3js/6.1.1/d3.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
