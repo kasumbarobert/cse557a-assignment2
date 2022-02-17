@@ -1,11 +1,20 @@
 2/16/21
 
-To run, open a terminal and run a python 3 server. I use python -m http.server 8080 as my command of choice. 
-Next, go to your browser and type in localhost:8080 and visit bizviz.html
+This project requires installation of the FastAPI and the uvicorn package in python.
+
+They can be installed using 
+pip install fastapi
+pip install uvicorn
+
+
+
+To run, open a terminal and run a python 3 server. You can use the command python -m main.py
+
+Next, go to your browser and type in 127.0.0.1:8080
 
 For M2 - Python code was written in order to separate out each day's worth of purchases from both the credit card csv and the loyalty data csv. We aggregated the revenue information for each business on a particular day as well as the number of purchases that were made on that day in each csv. 
 
-This html/js file includes a simple bar chart that visualizes the credit card earnings of each business each day, and you can toggle between whether you're viewing the revenue information or the frequency of visits. 
+This index.html/js file includes a simple bar chart that visualizes the credit card earnings of each business each day, and you can toggle between whether you're viewing the revenue information or the frequency of visits. The main page also shows a map with focused to the Abila. We have so far added the places that have been visited by employees at GasTech
 
 After making this initial bar chart, it's become clear that a change of direction or further visualizations are necessary in order to glean meaningful information from the purchases. For the final submission/pre-writeup, we are considering taking the following steps:
 
