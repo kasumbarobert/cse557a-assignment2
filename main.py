@@ -1,13 +1,11 @@
 # main.py
 
 from fastapi import FastAPI
-import os
+
 import pandas as pd
 import numpy as np
-import math
-import matplotlib.pyplot as plt
-import re
-import pickle
+
+
 from starlette.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from os.path import exists as file_exists
@@ -15,7 +13,6 @@ import uvicorn
 
 
 
-plt.rcParams['figure.figsize'] = [12, 12]
 
 app = FastAPI()
 app.mount("/static", StaticFiles(directory="assignment2"), name="static")
@@ -48,4 +45,4 @@ async def get_locations():
 
 
 if __name__ == '__main__':
-	uvicorn.run(app, host="127.0.0.1", port=8000)
+	uvicorn.run(app, host="127.0.0.1", port=8080)
