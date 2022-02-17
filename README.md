@@ -1,16 +1,16 @@
 2/16/21
 
-This project requires installation of the FastAPI and the uvicorn package in python.
+# Project Setup:
 
-They can be installed using 
-pip install fastapi
-pip install uvicorn
+This project requires installation of the FastAPI and  uvicorn packages in python. They can be installed using 
+1. **pip install fastapi**
+2. **pip install uvicorn**
 
-To run, open a terminal and run a python 3 server. You can use the command python -m main.py
+To run, open a terminal and run a python3 server. You can use the command **python3 -m main.py** from the terminal
 
-Next, go to your browser and type in 127.0.0.1:8080
+Next, go to your browser and type in **127.0.0.1:8080**
 
-For M2 - Python code was written in order to separate out each day's worth of purchases from both the credit card csv and the loyalty data csv. We aggregated the revenue information for each business on a particular day as well as the number of purchases that were made on that day in each csv. 
+For M2 - Python code was written in order to separate out each day's worth of purchases from both the credit card csv and the loyalty data csv. We aggregated the revenue information for each business on a particular day as well as the number of purchases that were made on that day in each csv. We also used a server-client architecture with the python running as the server end and JS/HTML/d3 on the front end. 
 
 This main pages shows a simple bar chart that visualizes the credit card earnings of each business each day, and you can toggle between whether you're viewing the revenue information or the frequency of visits. The main page also shows a map with focused to the Abila. We have so far added the places that have been visited by employees at GasTech. Currently only the selections of date and the perfomance metric will show effect.
 
@@ -25,5 +25,6 @@ After making this initial bar chart, it's become clear that a change of directio
 For the map, we intend to add the following for our final submission:
 
 1. Showing the route taken by a single employee or employees in a given department as selected by the user.
+2. Show the most popular places that employees visited
 
-All of these should be quite doable and in conjunction with the map portion we've built, should give us a holistic view ono what's going on.
+All of these should be quite doable and will give us a holistic view on what's going on.
