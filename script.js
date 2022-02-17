@@ -149,3 +149,4 @@ function changeData() {
 
 document.getElementById("date").addEventListener("change", changeData)
 document.getElementById("pmetric").addEventListener("change", changeData)
+changeData()
