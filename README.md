@@ -2,9 +2,10 @@
 
 # Project Setup:
 
-This project requires installation of the FastAPI and  uvicorn packages in python. They can be installed using 
+This project requires installation of the FastAPI, uvicorn and starlette packages in python. They can be installed using 
 1. **pip install fastapi**
 2. **pip install uvicorn**
+3. **pip install starlette**
 
 We also used a server-client architecture with the python running as the server end and JS/HTML/d3 on the front end. To run, open a terminal and run the main file to start the server. You can use the command **python3 -m main.py** from the terminal
 

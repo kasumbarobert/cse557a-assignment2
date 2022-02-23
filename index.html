@@ -37,15 +37,12 @@
 </head>
 
 <body class="container">
-    <div class="alert alert-info alert-dismissible fade hide">
-        <strong>Info!</strong> The employee and department selections have not been implement yet but they are coming soon.
-        <button type="button" class="btn-close" data-bs-dismiss="alert"><i class="fa fa-close"></i></button>
-    </div>
+
 
     <div id ="controls" class="panel row panel-default mt-3">
         <div id ="employees_div" class="col col-3"> 
             <select class="form-select form-control" aria-label="Default select example" id="employees_list">
-                <option>Choose employee</option>
+                <option value="all">All employees</option>
             </select>
         </div>
         <div id ="employees_div" class="col col-3"> 
@@ -73,35 +70,73 @@
 
             </select>
         </div>
-        <!-- <div id ="employees_div" class="col col-3"> 
-            <select class="form-select form-control" aria-label="Default select example">
-                <option>Choose end Date</option>
-            </select>
-        </div> -->
+       
+    </div>
+    <div class="row">
+        <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a
+                    class="nav-link active"
+                    id="tab-map"
+                    data-mdb-toggle="tab"
+                    href="#tabs-map"
+                    role="tab"
+                    aria-controls="tabs-map"
+                    aria-selected="true"
+                    >Map</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a
+                    class="nav-link active"
+                    id="tab-businesses"
+                    data-mdb-toggle="tab"
+                    href="#tabs-businesses"
+                    role="tab"
+                    aria-controls="tabs-businesses"
+                    aria-selected="false"
+                    >Businesses</a>
+            </li>
+        </ul>
     </div>
 
-    <h2>Business Performance Measures</h2>
-    <div  class="panel panel-default">
-        <div id="bgraph-container" class="panel-body">
-            <span class ="row">
-                <span class ="col-4"><label >Performance Metric:</label></span>
-                <span  class ="col-4">
-                    <select id="pmetric" class="form-select form-control" aria-label="Default select example">
-                        <option selected value="revenue">Revenue</option>
-                        <option value="frequency">Purchase Frequency</option>
-                    </select>
-                </span>
-            </span>
-            <h3>Credit Card Histories</h3>
+    <div class="tab-content" id="vis-tabs">
+        <div
+          class="tab-pane fade show active"
+          id="tabs-map"
+          role="tabpanel"
+          aria-labelledby="tab-map"
+        >
+            <h2>Map </h2>
+            <div class ="panel row panel-default">
+                <div id ="map" class="col col-12 mt-3">
+                
+                </div>
+            </div>
+          
+        </div>
+
+        <div class="tab-pane fade" id="tabs-businesses" role="tabpanel" aria-labelledby="tab-businesses">
+            <h2>Business Performance Measures</h2>
+            <div  class="panel panel-default">
+                <div id="bgraph-container" class="panel-body">
+                    <span class ="row">
+                        <span class ="col-4"><label >Performance Metric:</label></span>
+                        <span  class ="col-4">
+                            <select id="pmetric" class="form-select form-control" aria-label="Default select example">
+                                <option selected value="revenue">Revenue</option>
+                                <option value="frequency">Purchase Frequency</option>
+                            </select>
+                        </span>
+                    </span>
+                    <h3>Credit Card Histories</h3>
+                </div>
+            </div>
         </div>
     </div>
 
-    <h2>Map </h2>
-    <div class ="panel row panel-default">
-        <div id ="map" class="col col-12 mt-3">
-        
-        </div>
-    </div>
+    
+
+   
    
     
    
@@ -111,9 +146,18 @@
 
 <script>
     var articles= new Array()
+    var location_by_minute = null
+    var map  = null
+    var all_employees = null
+    var map_colors = ["#696969","#a0522d","#006400","#8b0000","#808000","#483d8b","#3cb371","#008080","#4682b4","#9acd32","#00008b","#32cd32","#daa520","#7f007f","#8fbc8f","#9932cc","#ff0000","#00ced1","#ff8c00","#c71585","#00ff00","#e9967a","#dc143c",
+    "#00bfff","#0000ff","#adff2f","#da70d6","#ff7f50","#ff00ff","#1e90ff","#db7093","#f0e68c","#ffff54","#dda0dd","#add8e6","#7b68ee","#98fb98","#7fffd4","#ffe4c4","#ffc0cb"]
     $(()=>{
 
-        var map = L.map('map', {
+        d3.csv("/data/locations_by_minute.csv").then(function (locationData){
+                location_by_minute = locationData
+            })
+
+         map = L.map('map', {
             center: [36.06921504029343 , 24.86214637756348],
             zoom: 13.5
         })
@@ -123,13 +167,16 @@
         }));
 
         d3.json("/employees").then(function(employees) {
+            all_employees = employees.map(function(emp){
+                return emp.CarID
+            })
                var options = d3.select("#employees_list").selectAll("option")
                .data(employees).enter().append("option");
                options.text(function(d) {
                 return d.FirstName+" "+d.LastName;
                 })
                 .attr("value", function(d) {
-                    return d.FirstName+" "+d.LastName;
+                    return d.CarID;
                 });
 
                 // var departments= $.unique(employees.map(function (d) {return ;}));
@@ -175,7 +222,7 @@
                 L.marker([locations[x].lat , locations[x].long])
                     .bindTooltip(locations[x].name, 
                     {
-                        permanent: true, 
+                        //permanent: true, 
                         direction: 'right',
                         riseOnHover: true
                     }
@@ -185,16 +232,39 @@
        })
 
        d3.select("#employees_list").on("change", function(){
-        d3.select(".alert").attr("class","alert alert-info alert-dismissible fade show")
-        alert("Coming soon ...")
+        updateRoutes()
       });
       d3.select("#departments_list").on("change", function(){
-        d3.select(".alert").attr("class","alert alert-info alert-dismissible fade show")
-        alert("Coming soon ...")
+        updateRoutes()
+
       });
     
     
     })
+    function updateRoutes(){
+        carId = document.getElementById('employees_list').value
+        date = document.getElementById('date').value
+
+        if (carId =="all"){
+            for (let i in all_employees){
+                carId = all_employees[i]
+                var carLocations = location_by_minute.filter(function(location){
+                    return location.id == carId && (new Date(location.date).setHours(0,0,0,0))==(new Date(date).setHours(0,0,0,0));
+                });
+                var latlngs = carLocations.map(function(loc){return [loc.lat,loc.long]}); 
+                var path = L.polyline(latlngs, {"delay":400,"weight":1,"color":map_colors[carId],"paused":true,"reverse":true}).addTo(map);
+            }
+        }
+        else{
+            var carLocations = location_by_minute.filter(function(location){
+                return location.id == carId && (new Date(location.date).setHours(0,0,0,0))==(new Date(date).setHours(0,0,0,0));
+            });
+            var latlngs = carLocations.map(function(loc){return [loc.lat,loc.long]}); 
+            var path = L.polyline(latlngs, {"delay":400,"weight":3,"color":map_colors[carId],"paused":true,"reverse":true}).addTo(map);
+        }
+        
+        
+    }
     
     </script>
     <script src="script.js"></script>

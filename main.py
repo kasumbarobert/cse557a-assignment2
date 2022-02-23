@@ -4,8 +4,6 @@ from fastapi import FastAPI
 
 import pandas as pd
 import numpy as np
-
-
 from starlette.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from os.path import exists as file_exists
