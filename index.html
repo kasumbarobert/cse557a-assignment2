@@ -21,7 +21,7 @@
 <style>
     #map {
         width: 900px;
-        height: 650px;
+        height: 600px;
       }
     
 
@@ -36,184 +36,175 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body class="container">
-
-
-    <div id ="controls" class="panel row panel-default mt-3">
-        <div id ="employees_div" class="col col-3"> 
-            <select class="form-select form-control" aria-label="Default select example" id="employees_list">
-                <option value="all">All employees</option>
-            </select>
-        </div>
-        <div id ="employees_div" class="col col-3"> 
-            <select class="form-select form-control" aria-label="Default select example" id="departments_list">
-                <option>Choose Department</option>
-            </select>
-        </div>
-        <div id ="employees_div" class="col col-3"> 
-            <select class="form-select form-control" aria-label="Default select example" id="date">
-                    <!-- <option>Choose start Date to visualize</option> -->
-                    <option value="1-6-2014">1-6-2014</option>
-                    <option value="1-7-2014">1-7-2014</option>
-                    <option value="1-8-2014">1-8-2014</option>
-                    <option value="1-9-2014">1-9-2014</option>
-                    <option value="1-10-2014">1-10-2014</option>
-                    <option value="1-11-2014">1-11-2014</option>
-                    <option value="1-12-2014">1-12-2014</option>
-                    <option value="1-13-2014">1-13-2014</option>
-                    <option value="1-14-2014">1-14-2014</option>
-                    <option value="1-15-2014">1-15-2014</option>
-                    <option value="1-16-2014">1-16-2014</option>
-                    <option value="1-17-2014">1-17-2014</option>
-                    <option value="1-18-2014">1-18-2014</option>
-                    <option value="1-19-2014">1-19-2014</option>
-
-            </select>
-        </div>
-       
-    </div>
-    <div class="row">
-        <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
-            <li class="nav-item" role="presentation">
-                <a
-                    class="nav-link active"
-                    id="tab-map"
-                    data-mdb-toggle="tab"
-                    href="#tabs-map"
-                    role="tab"
-                    aria-controls="tabs-map"
-                    aria-selected="true"
-                    >Map</a>
-            </li>
-            <li class="nav-item" role="presentation">
-                <a
-                    class="nav-link active"
-                    id="tab-businesses"
-                    data-mdb-toggle="tab"
-                    href="#tabs-businesses"
-                    role="tab"
-                    aria-controls="tabs-businesses"
-                    aria-selected="false"
-                    >Businesses</a>
-            </li>
-        </ul>
-    </div>
-
-    <div class="tab-content" id="vis-tabs">
-        <div
-          class="tab-pane fade show active"
-          id="tabs-map"
-          role="tabpanel"
-          aria-labelledby="tab-map"
-        >
-            <h2>Map </h2>
-            <div class ="panel row panel-default">
-                <div id ="map" class="col col-12 mt-3">
-                
+<body >
+    <div class=" row">
+        <div class="col col-3">
+            <div id ="controls" class="panel  panel-default">
+                <div id ="employees_div"> 
+                    <select class="form-select form-control" aria-label="Default select example" id="employees_list">
+                        <option value="all">All employees</option>
+                    </select>
                 </div>
-            </div>
-          
-        </div>
-
-        <div class="tab-pane fade" id="tabs-businesses" role="tabpanel" aria-labelledby="tab-businesses">
-            <h2>Business Performance Measures</h2>
-            <div  class="panel panel-default">
-                <div id="bgraph-container" class="panel-body">
-                    <span class ="row">
-                        <span class ="col-4"><label >Performance Metric:</label></span>
-                        <span  class ="col-4">
-                            <select id="pmetric" class="form-select form-control" aria-label="Default select example">
-                                <option selected value="revenue">Revenue</option>
-                                <option value="frequency">Purchase Frequency</option>
-                            </select>
-                        </span>
-                    </span>
-                    <h3>Credit Card Histories</h3>
+                <div id ="department_div" > 
+                    <select class="form-select form-control" aria-label="Default select example" id="departments_list">
+                        <option>Choose Department</option>
+                    </select>
                 </div>
+                <div id ="date_div" > 
+                    <select class="form-select form-control" aria-label="Default select example" id="date">
+                            <!-- <option>Choose start Date to visualize</option> -->
+                            <option value="1-6-2014">1-6-2014</option>
+                            <option value="1-7-2014">1-7-2014</option>
+                            <option value="1-8-2014">1-8-2014</option>
+                            <option value="1-9-2014">1-9-2014</option>
+                            <option value="1-10-2014">1-10-2014</option>
+                            <option value="1-11-2014">1-11-2014</option>
+                            <option value="1-12-2014">1-12-2014</option>
+                            <option value="1-13-2014">1-13-2014</option>
+                            <option value="1-14-2014">1-14-2014</option>
+                            <option value="1-15-2014">1-15-2014</option>
+                            <option value="1-16-2014">1-16-2014</option>
+                            <option value="1-17-2014">1-17-2014</option>
+                            <option value="1-18-2014">1-18-2014</option>
+                            <option value="1-19-2014">1-19-2014</option>
+                    </select>
+                </div>
+                <div id ="date_div" class="row" > 
+                    <div class="col-6" > 
+                        <input type="time" class="form-control col-12" id="start_time" min="00" max="23" value="00:00"/>
+                    </div>
+                    <div class="col-6" > 
+                        <input type="time" class="form-control col-12" id="end_time" min="00" max="23" value="23:59"/>
+                    </div>
+                </div>
+               
             </div>
         </div>
+        <div class="col col-9">
+            <div class="row">
+                <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
+                    <li class="nav-item active" role="presentation">
+                        <a
+                            class="nav-link active"
+                            id="tab-map"
+                            data-toggle="tab"
+                            href="#tabs-map"
+                            role="tab"
+                            aria-controls="tabs-map"
+                            aria-selected="true"
+                            >Map</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a
+                            class="nav-link "
+                            id="tab-businesses"
+                            data-toggle="tab"
+                            href="#tabs-businesses"
+                            role="tab"
+                            aria-controls="tabs-businesses"
+                            aria-selected="false"
+                            >Businesses</a>
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="tab-content" id="vis-tabs">
+                <div
+                  class="tab-pane fade show active"
+                  id="tabs-map"
+                  role="tabpanel"
+                  aria-labelledby="tab-map"
+                >
+                    <div class ="panel row panel-default">
+                        <div id ="map" class="col col-12 mt-3">
+                        
+                        </div>
+                    </div>
+                  
+                </div>
+        
+                <div class="tab-pane fade" id="tabs-businesses" role="tabpanel" aria-labelledby="tab-businesses">
+                    <h2>Business Performance Measures</h2>
+                    <div  class="panel panel-default">
+                        <div id="bgraph-container" class="panel-body">
+                            <span class ="row">
+                                <span class ="col-4"><label >Performance Metric:</label></span>
+                                <span  class ="col-4">
+                                    <select id="pmetric" class="form-select form-control" aria-label="Default select example">
+                                        <option selected value="revenue">Revenue</option>
+                                        <option value="frequency">Purchase Frequency</option>
+                                    </select>
+                                </span>
+                            </span>
+                            <h3>Credit Card Histories</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    
-
-   
-   
-    
-   
-
-
 </body>
 
 <script>
     var articles= new Array()
     var location_by_minute = null
     var map  = null
+    var all_employees_ids = null
     var all_employees = null
     var map_colors = ["#696969","#a0522d","#006400","#8b0000","#808000","#483d8b","#3cb371","#008080","#4682b4","#9acd32","#00008b","#32cd32","#daa520","#7f007f","#8fbc8f","#9932cc","#ff0000","#00ced1","#ff8c00","#c71585","#00ff00","#e9967a","#dc143c",
     "#00bfff","#0000ff","#adff2f","#da70d6","#ff7f50","#ff00ff","#1e90ff","#db7093","#f0e68c","#ffff54","#dda0dd","#add8e6","#7b68ee","#98fb98","#7fffd4","#ffe4c4","#ffc0cb"]
+    var all_employees_ids_layer_group = []
+    var single_employee_layer_group = []
+    var abila_layer_group = null
+    var department_employees_layer =[]
     $(()=>{
-
+        
         d3.csv("/data/locations_by_minute.csv").then(function (locationData){
                 location_by_minute = locationData
             })
 
          map = L.map('map', {
-            center: [36.06921504029343 , 24.86214637756348],
+            center: [36.068421504029343 , 24.86214637756348],
             zoom: 13.5
         })
         .addLayer(L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{
             maxZoom: 20,
             subdomains:['mt0','mt1','mt2','mt3']
         }));
+        all_employees_ids_layer_group = L.layerGroup()
+        single_employee_layer_group = L.layerGroup()
+        department_employees_layer = L.layerGroup()
 
         d3.json("/employees").then(function(employees) {
-            all_employees = employees.map(function(emp){
+            all_employees_ids = employees.map(function(emp){
                 return emp.CarID
             })
-               var options = d3.select("#employees_list").selectAll("option")
-               .data(employees).enter().append("option");
-               options.text(function(d) {
+            all_employees_ids = all_employees_ids.filter(Boolean)
+            all_employees = employees
+            var options = d3.select("#employees_list").selectAll("option")
+            .data(employees).enter().append("option");
+            options.text(function(d) {
                 return d.FirstName+" "+d.LastName;
-                })
-                .attr("value", function(d) {
-                    return d.CarID;
-                });
-
-                // var departments= $.unique(employees.map(function (d) {return ;}));
-
-                // console.log(departments); 
-                d3.select("#departments_list").selectAll("option")
-                .data([...new Set(d3.map(employees, function(emp){return emp.CurrentEmploymentType;}))])
-                .enter()
-                .append("option")
-                .text(function(d){return d;})
-                .attr("value",function(d){return d;});
+            })
+            .attr("value", function(d) {
+                return d.CarID;
+            });
+            d3.select("#departments_list").selectAll("option")
+            .data([...new Set(d3.map(employees, function(emp){return emp.CurrentEmploymentType;}))])
+            .enter()
+            .append("option")
+            .text(function(d){return d;})
+            .attr("value",function(d){return d;});
             }).catch(function(err) {
                     console.log(err)
             })
-
-
-
-
-
-        
-        //map.addLayer(new L.Control.fileLayerLoad("static/Geospatial/Abila.kml"))
         var svg = d3.select(map.getPanes().overlayPane).append("svg"),
         g = svg.append("g").attr("class", "leaflet-zoom-hide");
-
+        abila_layer_group = new L.KML("static/Geospatial/Abila.kml");
+        map.addLayer(abila_layer_group);
         
-
         var kmz = L.kmzLayer().addTo(map);
-        //var control = L.control.layers(null, null, { collapsed:false }).addTo(map)
-        kmz.on('load', function(e) {
-            //control.addLayer(e.layer, e.name);
-            
-           
-        });
-        const abila = new L.KML("static/Geospatial/Abila.kml");
-        map.addLayer(abila);
-        //map.addLayer(new L.KML("static/Geospatial/Abila.kml"))
-       kmz.load("static/Geospatial/Kronos Island.kmz")
+        kmz.load("static/Geospatial/Kronos Island.kmz")
     
        d3.json("/locations").then(function(locations){
            
@@ -228,6 +219,7 @@
                     }
                 ).addTo(map);
             }
+            abila_layer_group.setStyle({color: '#eeeeee', "weight":0.2})
        
        })
 
@@ -235,6 +227,19 @@
         updateRoutes()
       });
       d3.select("#departments_list").on("change", function(){
+        displayRoutesFromDept()
+
+      });
+      d3.select("#date").on("change", function(){
+        updateRoutes()
+
+      });
+
+      d3.select("#start_time").on("change", function(){
+        updateRoutes()
+
+      });
+      d3.select("#end_time").on("change", function(){
         updateRoutes()
 
       });
@@ -244,26 +249,108 @@
     function updateRoutes(){
         carId = document.getElementById('employees_list').value
         date = document.getElementById('date').value
+        start_time = date+" "+document.getElementById('start_time').value
+        end_time = date+" "+document.getElementById('end_time').value
+        console.log(start_time, end_time)
 
         if (carId =="all"){
-            for (let i in all_employees){
-                carId = all_employees[i]
-                var carLocations = location_by_minute.filter(function(location){
-                    return location.id == carId && (new Date(location.date).setHours(0,0,0,0))==(new Date(date).setHours(0,0,0,0));
-                });
-                var latlngs = carLocations.map(function(loc){return [loc.lat,loc.long]}); 
-                var path = L.polyline(latlngs, {"delay":400,"weight":1,"color":map_colors[carId],"paused":true,"reverse":true}).addTo(map);
-            }
+            displayALlRoutes(start_time, end_time)
+            single_employee_layer_group.clearLayers()
+            department_employees_layer.clearLayers()
         }
         else{
+            displayALlRoutes(start_time, end_time)
+            single_employee_layer_group.clearLayers()
+            loc_start_time = new Date(start_time)
+            loc_end_time = new Date(end_time)
             var carLocations = location_by_minute.filter(function(location){
-                return location.id == carId && (new Date(location.date).setHours(0,0,0,0))==(new Date(date).setHours(0,0,0,0));
+                gps_date_time = new Date(location.Timestamp)
+                return location.id == carId && (gps_date_time>=loc_start_time && gps_date_time<=loc_end_time);
             });
+            
             var latlngs = carLocations.map(function(loc){return [loc.lat,loc.long]}); 
-            var path = L.polyline(latlngs, {"delay":400,"weight":3,"color":map_colors[carId],"paused":true,"reverse":true}).addTo(map);
+            var path = L.polyline(latlngs, {"delay":400,"weight":3,"color":map_colors[carId],"paused":true,"reverse":true, "id":carId})
+            i = carId
+            path.bindPopup("<span style='color:"+map_colors[carId]+"'>"+all_employees[i].FirstName +" "+all_employees[i].LastName+"</span>",{
+                    direction: 'auto',
+                    color:map_colors[carId],
+                    riseOnHover: true
+            })
+            path.on("mouseover", function(e){
+                this.setStyle({ "weight":5})
+            })
+            path.on("mouseout", function(e){
+                this.setStyle({ "weight":3})
+            })
+            
+            single_employee_layer_group.addLayer(path)
+            single_employee_layer_group.addTo(map);
         }
         
         
+    }
+
+    function displayRoutesFromDept(){
+            department = document.getElementById('departments_list').value
+            department_employees_layer.clearLayers()
+            single_employee_layer_group.clearLayers()
+            date = document.getElementById('date').value
+            start_time = date+" "+document.getElementById('start_time').value
+            end_time = date+" "+document.getElementById('end_time').value
+            loc_start_time = new Date(start_time)
+            loc_end_time = new Date(end_time)
+            dept_employees = all_employees.filter(function(emp){
+               return emp.CurrentEmploymentType==department
+            })
+            for (let i in dept_employees){
+                var carId = dept_employees[i].CarID
+                var carLocations = location_by_minute.filter(function(location){
+                    gps_date_time = new Date(location.Timestamp)
+                    return location.id == carId && (gps_date_time>=loc_start_time && gps_date_time<=loc_end_time);
+                });
+                var latlngs = carLocations.map(function(loc){return [loc.lat,loc.long]}); 
+                var path = L.polyline(latlngs, {"delay":400,"weight":3,"color":map_colors[carId],"paused":true,"reverse":true});
+                path.bindPopup("<span style='color:"+map_colors[carId]+"'>"+dept_employees[i].FirstName +" "+dept_employees[i].LastName+"</span>",{
+                    direction: 'auto',
+                    color:map_colors[carId],
+                    riseOnHover: true
+                })
+                path.on("mouseover", function(e){
+                    this.setStyle({ "weight":5})
+                })
+                path.on("mouseout", function(e){
+                    this.setStyle({ "weight":3})
+                })
+                department_employees_layer.addLayer(path)
+            }
+            department_employees_layer.addTo(map)
+    }
+    function displayALlRoutes(start_time, end_time){
+            all_employees_ids_layer_group.clearLayers()
+            loc_start_time = new Date(start_time)
+            loc_end_time = new Date(end_time)
+            for (let i in all_employees){
+                var carId = all_employees[i].CarID
+                var carLocations = location_by_minute.filter(function(location){
+                    gps_date_time = new Date(location.Timestamp)
+                    return location.id == carId && (gps_date_time>=loc_start_time && gps_date_time<=loc_end_time);
+                });
+                var latlngs = carLocations.map(function(loc){return [loc.lat,loc.long]}); 
+                var path = L.polyline(latlngs, {"delay":400,"weight":1,"color":"gray","paused":true,"reverse":true});
+                path.bindPopup("<span style='color:gray'>"+all_employees[i].FirstName +" "+all_employees[i].LastName+"</span>",{
+                    direction: 'auto',
+                    color:map_colors[carId],
+                    riseOnHover: true
+                })
+                path.on("mouseover", function(e){
+                    this.setStyle({ "weight":4, color:"black"})
+                })
+                path.on("mouseout", function(e){
+                    this.setStyle({ "weight":1, color:"gray"})
+                })
+                all_employees_ids_layer_group.addLayer(path)
+            }
+        all_employees_ids_layer_group.addTo(map);
     }
     
     </script>
