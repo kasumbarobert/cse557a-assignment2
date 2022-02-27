@@ -175,7 +175,8 @@
         single_employee_layer_group = L.layerGroup()
         department_employees_layer = L.layerGroup()
 
-        d3.json("/employees").then(function(employees) {
+        d3.csv("/assignment2/car-assignments.csv").then(function(employees) {
+            console.log(employees)
             all_employees_ids = employees.map(function(emp){
                 return emp.CarID
             })
@@ -195,6 +196,8 @@
             .append("option")
             .text(function(d){return d;})
             .attr("value",function(d){return d;});
+
+            updateRoutes()
             }).catch(function(err) {
                     console.log(err)
             })
@@ -206,7 +209,7 @@
         var kmz = L.kmzLayer().addTo(map);
         kmz.load("static/Geospatial/Kronos Island.kmz")
     
-       d3.json("/locations").then(function(locations){
+       d3.json("/data/business_locations.json").then(function(locations){
            
             for (let x in locations) {
 
@@ -244,7 +247,7 @@
 
       });
     
-    
+     
     })
     function updateRoutes(){
         carId = document.getElementById('employees_list').value
@@ -260,6 +263,7 @@
         }
         else{
             displayALlRoutes(start_time, end_time)
+            department_employees_layer.clearLayers()
             single_employee_layer_group.clearLayers()
             loc_start_time = new Date(start_time)
             loc_end_time = new Date(end_time)
@@ -273,16 +277,22 @@
             i = carId
             path.bindPopup("<span style='color:"+map_colors[carId]+"'>"+all_employees[i].FirstName +" "+all_employees[i].LastName+"</span>",{
                     direction: 'auto',
-                    color:map_colors[carId],
-                    riseOnHover: true
+                    color:map_colors[carId]
             })
             path.on("mouseover", function(e){
                 this.setStyle({ "weight":5})
+                map.openPopup(this._popup)
             })
             path.on("mouseout", function(e){
                 this.setStyle({ "weight":3})
+                map.closePopup()
             })
-            
+            path.on("clik", function(e){
+                console.log(d3.select("#employees_list").node())
+            })
+           
+            single_employee_layer_group.addLayer( L.circleMarker(latlngs[0],{color:"red",radius:7}))
+            single_employee_layer_group.addLayer( L.circleMarker(latlngs[latlngs.length-1],{color:"blue",radius:7}))
             single_employee_layer_group.addLayer(path)
             single_employee_layer_group.addTo(map);
         }
@@ -336,7 +346,7 @@
                     return location.id == carId && (gps_date_time>=loc_start_time && gps_date_time<=loc_end_time);
                 });
                 var latlngs = carLocations.map(function(loc){return [loc.lat,loc.long]}); 
-                var path = L.polyline(latlngs, {"delay":400,"weight":1,"color":"gray","paused":true,"reverse":true});
+                var path = L.polyline(latlngs, {"delay":400,"weight":0.2,"color":"gray","paused":true,"reverse":true});
                 path.bindPopup("<span style='color:gray'>"+all_employees[i].FirstName +" "+all_employees[i].LastName+"</span>",{
                     direction: 'auto',
                     color:map_colors[carId],

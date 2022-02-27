@@ -13,7 +13,7 @@ import uvicorn
 
 
 app = FastAPI()
-app.mount("/static", StaticFiles(directory="assignment2"), name="static")
+app.mount("/assignment2", StaticFiles(directory="assignment2"), name="static")
 app.mount("/data", StaticFiles(directory="data"), name="static")
 
 @app.get("/")
