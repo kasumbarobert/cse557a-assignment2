@@ -203,11 +203,11 @@
             })
         var svg = d3.select(map.getPanes().overlayPane).append("svg"),
         g = svg.append("g").attr("class", "leaflet-zoom-hide");
-        abila_layer_group = new L.KML("static/Geospatial/Abila.kml");
+        abila_layer_group = new L.KML("/assignment2/Geospatial/Abila.kml");
         map.addLayer(abila_layer_group);
         
         var kmz = L.kmzLayer().addTo(map);
-        kmz.load("static/Geospatial/Kronos Island.kmz")
+        kmz.load("/assignment2/Geospatial/Kronos Island.kmz")
     
        d3.json("/data/business_locations.json").then(function(locations){
            
