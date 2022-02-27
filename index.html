@@ -159,7 +159,7 @@
     var department_employees_layer =[]
     $(()=>{
         
-        d3.csv("/data/locations_by_minute.csv").then(function (locationData){
+        d3.csv("data/locations_by_minute.csv").then(function (locationData){
                 location_by_minute = locationData
             })
 
@@ -175,7 +175,7 @@
         single_employee_layer_group = L.layerGroup()
         department_employees_layer = L.layerGroup()
 
-        d3.csv("/assignment2/car-assignments.csv").then(function(employees) {
+        d3.csv("assignment2/car-assignments.csv").then(function(employees) {
             console.log(employees)
             all_employees_ids = employees.map(function(emp){
                 return emp.CarID
@@ -203,13 +203,13 @@
             })
         var svg = d3.select(map.getPanes().overlayPane).append("svg"),
         g = svg.append("g").attr("class", "leaflet-zoom-hide");
-        abila_layer_group = new L.KML("/assignment2/Geospatial/Abila.kml");
+        abila_layer_group = new L.KML("assignment2/Geospatial/Abila.kml");
         map.addLayer(abila_layer_group);
         
         var kmz = L.kmzLayer().addTo(map);
-        kmz.load("/assignment2/Geospatial/Kronos Island.kmz")
+        kmz.load("assignment2/Geospatial/Kronos Island.kmz")
     
-       d3.json("/data/business_locations.json").then(function(locations){
+       d3.json("data/business_locations.json").then(function(locations){
            
             for (let x in locations) {
 
