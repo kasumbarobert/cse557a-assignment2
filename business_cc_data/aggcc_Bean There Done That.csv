@@ -1,15 +1,15 @@
-,date,revenue
-0,1/6/2014,44.42
-1,1/7/2014,159.42000000000002
-2,1/8/2014,132.54
-3,1/9/2014,32.589999999999996
-4,1/10/2014,60.69
-5,1/11/2014,0
-6,1/12/2014,0
-7,1/13/2014,175.25
-8,1/14/2014,114.93
-9,1/15/2014,132.67000000000002
-10,1/16/2014,153.45000000000002
-11,1/17/2014,71.92999999999999
-12,1/18/2014,0
-13,1/19/2014,0
+,date,revenue,price,FirstName,LastName,date,CurrentEmploymentType,CurrentEmploymentTitle
+0,1/6/2014,44.42,16.09,Felix,Balas,1/6/2014,Engineering,Engineer
+1,1/7/2014,159.42,53.89,Axel,Calzas,1/7/2014,Engineering,Drill Technician
+2,1/8/2014,132.54,94.96,Gustav,Cazar,1/8/2014,Engineering,Hydraulic Technician
+3,1/9/2014,32.59,15.53,Gustav,Cazar,1/9/2014,Engineering,Hydraulic Technician
+4,1/10/2014,60.69,18.67,Gustav,Cazar,1/10/2014,Engineering,Hydraulic Technician
+5,1/11/2014,0,,,,,,
+6,1/12/2014,0,,,,,,
+7,1/13/2014,175.25,98.02,Felix,Balas,1/13/2014,Engineering,Engineer
+8,1/14/2014,114.93,67.82,Gustav,Cazar,1/14/2014,Engineering,Hydraulic Technician
+9,1/15/2014,132.67,93.13,Axel,Calzas,1/15/2014,Engineering,Drill Technician
+10,1/16/2014,153.45,98.34,Gustav,Cazar,1/16/2014,Engineering,Hydraulic Technician
+11,1/17/2014,71.93,19.67,Lars,Azada,1/17/2014,Engineering,Engineer
+12,1/18/2014,0,,,,,,
+13,1/19/2014,0,,,,,,

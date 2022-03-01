@@ -18,6 +18,9 @@ function ccUpdate(ccdata) {
     console.log(businessOption)
     console.log(ccdata)
 
+    // tip = d3.tip().attr('class', 'd3-tip').html(function(d) { 
+    //     return d; });
+
     // determine yMax
 
     revArray = new Array()
@@ -65,18 +68,32 @@ function ccUpdate(ccdata) {
             return yScaleCC(0) - yScaleCC(d.revenue)
         })
         .attr("width", xScaleCC.bandwidth())
-        .on("mouseover", function() {
-            console.log("moused over")
+        .on("mouseover", function(event, d) {
+            console.log(d)
             console.log(this)
-            d3.select(this).attr({
-                fill: "orange",
-              });
+            var name = d.FirstName + " " + d.LastName
+            var division = d.CurrentEmploymentType
+            var title = d.CurrentEmploymentTitle
+            var price = d.price;
+            var revenue = d.revenue;
+            document.getElementById("cc-name").innerHTML = "Name: " + name;
+            document.getElementById("cc-price").innerHTML = "Amount spent: $" + price;
+            document.getElementById("cc-revenue").innerHTML = "Total revenue: $" + revenue;
+            document.getElementById("cc-division").innerHTML = "Division: " + division;
+            document.getElementById("cc-title").innerHTML = "Title: " + title;
+            console.log("moused over")
         })
-        .on("mouseout", function() {
-            console.log("moused out")
-            d3.select(this).attr({
-                opacity: 1
-            });
+        .on("mouseout", function(d) {
+            // var name = ""
+            // var division = ""
+            // var title = ""
+            // var price = ""
+            // var revenue = ""
+            // document.getElementById("cc-name").innerHTML = "Name: " + name;
+            // document.getElementById("cc-price").innerHTML = "Price: " + price;
+            // document.getElementById("cc-revenue").innerHTML = "Total revenue: $" + revenue;
+            // document.getElementById("cc-division").innerHTML = "Division: " + division;
+            // document.getElementById("cc-title").innerHTML = "Title: " + title;
         })
 
         function xAxis(g) {

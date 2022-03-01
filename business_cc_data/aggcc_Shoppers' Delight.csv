@@ -1,15 +1,15 @@
-,date,revenue
-0,1/6/2014,293.67
-1,1/7/2014,0
-2,1/8/2014,0
-3,1/9/2014,258.43
-4,1/10/2014,279.53
-5,1/11/2014,545.1700000000001
-6,1/12/2014,688.9
-7,1/13/2014,360.83000000000004
-8,1/14/2014,0
-9,1/15/2014,162.0
-10,1/16/2014,177.53
-11,1/17/2014,444.34
-12,1/18/2014,258.33
-13,1/19/2014,30.39
+,date,revenue,price,FirstName,LastName,date,CurrentEmploymentType,CurrentEmploymentTitle
+0,1/6/2014,293.67,293.67,Isia,Vann,1/6/2014,Security,Perimeter Control
+1,1/7/2014,0,,,,,,
+2,1/8/2014,0,,,,,,
+3,1/9/2014,258.43,258.43,Rachel,Pantanal,1/9/2014,Administration,Assistant to CIO
+4,1/10/2014,279.53,279.53,Inga,Ferro,1/10/2014,Security,Site Control
+5,1/11/2014,545.17,238.52,Carla,Forluniau,1/11/2014,Administration,Assistant to IT Group Manager
+6,1/12/2014,688.9,211.03,Sven,Flecha,1/12/2014,Information Technology,IT Technician
+7,1/13/2014,360.83,216.43,Loreto,Bodrogi,1/13/2014,Security,Site Control
+8,1/14/2014,0,,,,,,
+9,1/15/2014,162,162,Ada,Campo-Corrente,1/15/2014,Executive,SVP/CIO
+10,1/16/2014,177.53,160.69,Axel,Calzas,1/16/2014,Engineering,Drill Technician
+11,1/17/2014,444.34,289.33,Kanon,Herrero,1/17/2014,Security,Badging Office
+12,1/18/2014,258.33,258.33,Orhan,Strum,1/18/2014,Executive,SVP/COO
+13,1/19/2014,30.39,30.39,Adra,Nubarron,1/19/2014,Engineering,Geologist

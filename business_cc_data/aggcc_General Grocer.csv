@@ -1,15 +1,15 @@
-,date,revenue
-0,1/6/2014,0
-1,1/7/2014,0
-2,1/8/2014,265.84
-3,1/9/2014,285.34
-4,1/10/2014,227.28
-5,1/11/2014,78.02
-6,1/12/2014,159.3
-7,1/13/2014,0
-8,1/14/2014,0
-9,1/15/2014,126.2
-10,1/16/2014,0
-11,1/17/2014,98.03
-12,1/18/2014,286.09
-13,1/19/2014,70.22
+,date,revenue,price,FirstName,LastName,date,CurrentEmploymentType,CurrentEmploymentTitle
+0,1/6/2014,0,,,,,,
+1,1/7/2014,0,,,,,,
+2,1/8/2014,265.84,265.84,Hideki,Cocinaro,1/8/2014,Security,Site Control
+3,1/9/2014,285.34,285.34,Edvard,Vann,1/9/2014,Security,Perimeter Control
+4,1/10/2014,227.28,227.28,Minke,Mies,1/10/2014,Security,Perimeter Control
+5,1/11/2014,78.02,78.02,Emile,Arpa,1/11/2014,Facilities,Janitor
+6,1/12/2014,159.3,159.3,Varro,Awelon,1/12/2014,Facilities,Janitor
+7,1/13/2014,0,,,,,,
+8,1/14/2014,0,,,,,,
+9,1/15/2014,126.2,126.2,Inga,Ferro,1/15/2014,Security,Site Control
+10,1/16/2014,0,,,,,,
+11,1/17/2014,98.03,98.03,Hideki,Cocinaro,1/17/2014,Security,Site Control
+12,1/18/2014,286.09,177.6,Bertrand,Ovan,1/18/2014,Facilities,Facilities Group Manager
+13,1/19/2014,70.22,70.22,Vira,Frente,1/19/2014,Engineering,Hydraulic Technician

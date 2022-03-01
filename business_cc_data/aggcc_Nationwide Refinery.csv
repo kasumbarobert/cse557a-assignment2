@@ -1,15 +1,15 @@
-,date,revenue
-0,1/6/2014,761.64
-1,1/7/2014,4870.64
-2,1/8/2014,8187.48
-3,1/9/2014,3726.4700000000003
-4,1/10/2014,3855.55
-5,1/11/2014,0
-6,1/12/2014,0
-7,1/13/2014,204.58
-8,1/14/2014,7307.4400000000005
-9,1/15/2014,6299.99
-10,1/16/2014,8284.390000000001
-11,1/17/2014,0
-12,1/18/2014,0
-13,1/19/2014,0
+,date,revenue,price,FirstName,LastName,date,CurrentEmploymentType,CurrentEmploymentTitle
+0,1/6/2014,761.64,761.64,Cecilia,Morluniau,1/6/2014,Facilities,Truck Driver
+1,1/7/2014,4870.64,1562.66,Valeria,Morlun,1/7/2014,Facilities,Truck Driver
+2,1/8/2014,8187.48,4513.16,Adan,Morlun,1/8/2014,Facilities,Truck Driver
+3,1/9/2014,3726.47,1440.39,Benito,Hawelon,1/9/2014,Facilities,Truck Driver
+4,1/10/2014,3855.55,2302.73,Claudio,Hawelon,1/10/2014,Facilities,Truck Driver
+5,1/11/2014,0,,,,,,
+6,1/12/2014,0,,,,,,
+7,1/13/2014,204.58,204.58,Cecilia,Morluniau,1/13/2014,Facilities,Truck Driver
+8,1/14/2014,7307.44,4429.76,Dylan,Scozzese,1/14/2014,Facilities,Truck Driver
+9,1/15/2014,6299.99,3004.98,Valeria,Morlun,1/15/2014,Facilities,Truck Driver
+10,1/16/2014,8284.39,4742.67,Valeria,Morlun,1/16/2014,Facilities,Truck Driver
+11,1/17/2014,0,,,,,,
+12,1/18/2014,0,,,,,,
+13,1/19/2014,0,,,,,,

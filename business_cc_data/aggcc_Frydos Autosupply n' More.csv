@@ -1,15 +1,15 @@
-,date,revenue
-0,1/6/2014,1192.19
-1,1/7/2014,312.73
-2,1/8/2014,665.52
-3,1/9/2014,566.6600000000001
-4,1/10/2014,379.12
-5,1/11/2014,876.11
-6,1/12/2014,250.89000000000001
-7,1/13/2014,10455.22
-8,1/14/2014,238.67000000000002
-9,1/15/2014,549.72
-10,1/16/2014,183.38
-11,1/17/2014,451.89
-12,1/18/2014,923.6999999999999
-13,1/19/2014,363.89000000000004
+,date,revenue,price,FirstName,LastName,date,CurrentEmploymentType,CurrentEmploymentTitle
+0,1/6/2014,1192.19,314.98,Marin,Onda,1/6/2014,Engineering,Drill Site Manager
+1,1/7/2014,312.73,312.73,Felix,Resumir,1/7/2014,Security,Security Group Manager
+2,1/8/2014,665.52,268.89,Anda,Ribera,1/8/2014,Administration,Assistant to CFO
+3,1/9/2014,566.66,276.75,Loreto,Bodrogi,1/9/2014,Security,Site Control
+4,1/10/2014,379.12,237.08,Sven,Flecha,1/10/2014,Information Technology,IT Technician
+5,1/11/2014,876.11,261,Felix,Resumir,1/11/2014,Security,Security Group Manager
+6,1/12/2014,250.89,161.96,Dante,Coginian,1/12/2014,Facilities,Lead Janitor
+7,1/13/2014,10455.22,10000,Lucas,Alcazar,1/13/2014,Information Technology,IT Helpdesk
+8,1/14/2014,238.67,146.74,Felix,Resumir,1/14/2014,Security,Security Group Manager
+9,1/15/2014,549.72,276.88,Mat,Bramar,1/15/2014,Administration,Assistant to CEO
+10,1/16/2014,183.38,130.01,Mat,Bramar,1/16/2014,Administration,Assistant to CEO
+11,1/17/2014,451.89,260.08,Isia,Vann,1/17/2014,Security,Perimeter Control
+12,1/18/2014,923.7,361.54,Lidelse,Dedos,1/18/2014,Engineering,Engineering Group Manager
+13,1/19/2014,363.89,209.76,Edvard,Vann,1/19/2014,Security,Perimeter Control

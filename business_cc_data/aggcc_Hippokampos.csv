@@ -1,15 +1,15 @@
-,date,revenue
-0,1/6/2014,458.39
-1,1/7/2014,417.39000000000004
-2,1/8/2014,436.06
-3,1/9/2014,361.93
-4,1/10/2014,435.68999999999994
-5,1/11/2014,736.12
-6,1/12/2014,567.8
-7,1/13/2014,511.53000000000003
-8,1/14/2014,354.81999999999994
-9,1/15/2014,635.5400000000001
-10,1/16/2014,456.34999999999997
-11,1/17/2014,342.68
-12,1/18/2014,471.03
-13,1/19/2014,490.57
+,date,revenue,price,FirstName,LastName,date,CurrentEmploymentType,CurrentEmploymentTitle
+0,1/6/2014,458.39,85.5,Vira,Frente,1/6/2014,Engineering,Hydraulic Technician
+1,1/7/2014,417.39,76.11,Kare,Orilla,1/7/2014,Engineering,Drill Technician
+2,1/8/2014,436.06,96.75,Varro,Awelon,1/8/2014,Facilities,Janitor
+3,1/9/2014,361.93,70.68,Axel,Calzas,1/9/2014,Engineering,Drill Technician
+4,1/10/2014,435.69,79.97,Willem,Vasco-Pais,1/10/2014,Executive,Environmental Safety Advisor
+5,1/11/2014,736.12,103.38,Minke,Mies,1/11/2014,Security,Perimeter Control
+6,1/12/2014,567.8,78.21,Felix,Balas,1/12/2014,Engineering,Engineer
+7,1/13/2014,511.53,99.63,Orhan,Strum,1/13/2014,Executive,SVP/COO
+8,1/14/2014,354.82,98.81,Nils,Calixto,1/14/2014,Information Technology,IT Technician
+9,1/15/2014,635.54,118.89,Brand,Tempestad,1/15/2014,Engineering,Drill Technician
+10,1/16/2014,456.35,114,Vira,Frente,1/16/2014,Engineering,Hydraulic Technician
+11,1/17/2014,342.68,108.35,Birgitta,Frente,1/17/2014,Engineering,Geologist
+12,1/18/2014,471.03,100.11,Axel,Calzas,1/18/2014,Engineering,Drill Technician
+13,1/19/2014,490.57,101.25,Felix,Balas,1/19/2014,Engineering,Engineer

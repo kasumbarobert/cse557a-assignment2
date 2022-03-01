@@ -1,15 +1,15 @@
-,date,revenue
-0,1/6/2014,131.46999999999997
-1,1/7/2014,349.52
-2,1/8/2014,337.51000000000005
-3,1/9/2014,170.56
-4,1/10/2014,177.25
-5,1/11/2014,105.16
-6,1/12/2014,406.81
-7,1/13/2014,203.5
-8,1/14/2014,419.44
-9,1/15/2014,194.07999999999998
-10,1/16/2014,134.17000000000002
-11,1/17/2014,211.13000000000002
-12,1/18/2014,193.41
-13,1/19/2014,169.72
+,date,revenue,price,FirstName,LastName,date,CurrentEmploymentType,CurrentEmploymentTitle
+0,1/6/2014,131.47,38.9,Isande,Borrasca,1/6/2014,Engineering,Drill Technician
+1,1/7/2014,349.52,97.71,Cornelia,Lais,1/7/2014,Administration,Assistant to Security Group Manager
+2,1/8/2014,337.51,109.73,Orhan,Strum,1/8/2014,Executive,SVP/COO
+3,1/9/2014,170.56,32.89,Hideki,Cocinaro,1/9/2014,Security,Site Control
+4,1/10/2014,177.25,35.24,Loreto,Bodrogi,1/10/2014,Security,Site Control
+5,1/11/2014,105.16,69.36,Isak,Baza,1/11/2014,Information Technology,IT Technician
+6,1/12/2014,406.81,117.22,Orhan,Strum,1/12/2014,Executive,SVP/COO
+7,1/13/2014,203.5,95.03,Edvard,Vann,1/13/2014,Security,Perimeter Control
+8,1/14/2014,419.44,107.32,Varja,Lagos,1/14/2014,Security,Badging Office
+9,1/15/2014,194.08,36.47,Gustav,Cazar,1/15/2014,Engineering,Hydraulic Technician
+10,1/16/2014,134.17,29.99,Elsa,Orilla,1/16/2014,Engineering,Drill Technician
+11,1/17/2014,211.13,70.21,Elsa,Orilla,1/17/2014,Engineering,Drill Technician
+12,1/18/2014,193.41,61.56,Lucas,Alcazar,1/18/2014,Information Technology,IT Helpdesk
+13,1/19/2014,169.72,67.98,Isak,Baza,1/19/2014,Information Technology,IT Technician

@@ -1,15 +1,15 @@
-,date,revenue
-0,1/6/2014,380.46
-1,1/7/2014,264.6
-2,1/8/2014,148.69
-3,1/9/2014,189.66
-4,1/10/2014,251.44
-5,1/11/2014,221.58000000000004
-6,1/12/2014,11.2
-7,1/13/2014,326.19
-8,1/14/2014,89.87
-9,1/15/2014,268.93
-10,1/16/2014,234.12
-11,1/17/2014,230.86
-12,1/18/2014,193.85
-13,1/19/2014,47.8
+,date,revenue,price,FirstName,LastName,date,CurrentEmploymentType,CurrentEmploymentTitle
+0,1/6/2014,380.46,106.93,Carla,Forluniau,1/6/2014,Administration,Assistant to IT Group Manager
+1,1/7/2014,264.6,82.25,Isak,Baza,1/7/2014,Information Technology,IT Technician
+2,1/8/2014,148.69,36.85,Willem,Vasco-Pais,1/8/2014,Executive,Environmental Safety Advisor
+3,1/9/2014,189.66,89.41,Lucas,Alcazar,1/9/2014,Information Technology,IT Helpdesk
+4,1/10/2014,251.44,113.33,Isak,Baza,1/10/2014,Information Technology,IT Technician
+5,1/11/2014,221.58,89.54,Isande,Borrasca,1/11/2014,Engineering,Drill Technician
+6,1/12/2014,11.2,11.2,Brand,Tempestad,1/12/2014,Engineering,Drill Technician
+7,1/13/2014,326.19,116.32,Loreto,Bodrogi,1/13/2014,Security,Site Control
+8,1/14/2014,89.87,31.09,Linda,Lagos,1/14/2014,Administration,Assistant to COO
+9,1/15/2014,268.93,88.83,Felix,Balas,1/15/2014,Engineering,Engineer
+10,1/16/2014,234.12,69.27,Edvard,Vann,1/16/2014,Security,Perimeter Control
+11,1/17/2014,230.86,79.67,Isia,Vann,1/17/2014,Security,Perimeter Control
+12,1/18/2014,193.85,111.93,Orhan,Strum,1/18/2014,Executive,SVP/COO
+13,1/19/2014,47.8,47.8,Felix,Resumir,1/19/2014,Security,Security Group Manager
