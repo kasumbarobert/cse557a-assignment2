@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 <link rel="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
@@ -142,6 +143,8 @@
                             </div>
 
                             <br>
+                            
+                        <div id="cc-time-info">
 
                             <span class="row">
                                 <span class="col-4"><label>Business:</label></span>
@@ -186,22 +189,28 @@
                             </span>
 
                             <h2> Aggregate Business Performance (CC) </h2>
-                            <div id="cc-time-graph-container">
-                                <h3>Business Performance by CC over time</h3>
+                         
+
+                            <div id="cc-time-graph-container" class="creditBarGraph">
+                                <h2>Business Performance by CC over time</h2>
                             </div>
 
-                            <div id="tooltip">
+                            <div id="tooltip" class="creditTooltip">
                                 <h4>CC Tooltip</h4>
                                 <p id="cc-name"> Name: </p>
                                 <p id="cc-price"> Amount paid: </p>
                                 <p id="cc-revenue"> Total spent: </p>
                                 <p id="cc-division"> Division: </p>
                                 <p id="cc-title">Title: </p>
-                            
                             </div>
+                            
+                        </div>
 
                             <br>
+                            <br>
 
+                        <div id="loyalty-time-container"> 
+                            
                             <span class="row">
                                 <span class="col-4">
                                     <label>Business:</label>
@@ -249,6 +258,18 @@
                             <div id="loyalty-time-graph-container">
                                 <h3>Business Performance by Loyalty over time</h3>
                             </div>
+
+                            <div id="loyalty-tooltip" class="loyaltyTooltip">
+                                <h4>CC Tooltip</h4>
+                                <p id="lo-name"> Name: </p>
+                                <p id="lo-price"> Amount paid: </p>
+                                <p id="lo-revenue"> Total spent: </p>
+                                <p id="lo-division"> Division: </p>
+                                <p id="lo-title">Title: </p>
+                            </div>
+                            
+
+                        </div>
                     </div>
                 </div>
             </div>

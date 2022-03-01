@@ -2,6 +2,14 @@
     opacity: 0.5;
 }
 
+.creditBarGraph {
+    float: left;
+}
+
+.creditTooltip {
+    float: right;
+}
+
 /* .x-axis-text {
     transform: translate(0, -50px); 
 }  */
