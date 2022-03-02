@@ -100,11 +100,22 @@
                             class="nav-link "
                             id="tab-businesses"
                             data-toggle="tab"
-                            href="#tabs-businesses"
+                            href="#tabs-cc"
                             role="tab"
-                            aria-controls="tabs-businesses"
+                            aria-controls="tabs-cc"
                             aria-selected="false"
-                            >Businesses</a>
+                            >Credit Card Records</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a
+                            class="nav-link "
+                            id="tab-loyalty"
+                            data-toggle="tab"
+                            href="#tabs-loyalty"
+                            role="tab"
+                            aria-controls="tabs-loyalty"
+                            aria-selected="false"
+                            >Loyalty Records</a>
                     </li>
                 </ul>
             </div>
@@ -124,100 +135,80 @@
                   
                 </div>
         
-                <div class="tab-pane fade" id="tabs-businesses" role="tabpanel" aria-labelledby="tab-businesses">
-                    <h2>Business Performance Measures</h2>
-                    <div  class="panel panel-default">
-                        <span class="row">
-                            <span class="col-4"><label>Performance Metric:</label></span>
-                            <span class="col-4">
-                                <select id="pmetric" class="form-select form-control" aria-label="Default select example">
-                                    <option selected="" value="revenue">Revenue</option>
-                                    <option value="frequency">Purchase Frequency</option>
-                                </select>
-                            </span>
-                        </span>
-
-                            <h2>Business Performance Measures</h2>
-                            <div id="bgraph-container">
-                                <h3>Credit Card Histories</h3>
-                            </div>
-
-                            <br>
-                            
-                        <div id="cc-time-info">
-
-                            <span class="row">
-                                <span class="col-4"><label>Business:</label></span>
-                                <span class="col-4">
-                                    <select id="ccmetric-select" class="form-select form-control" >
-                                    <option selected value="cc base">Select</option>
-                                    <option value="Abila Airport">Abila Airport</option>
-                                    <option value="Abila Scrapyard">Abila Scrapyard</option>
-                                    <option value="Abila Zacharo">Abila Zacharo</option>
-                                    <option value="Ahaggo Museum">Ahaggo Museum</option>
-                                    <option value="Albert's Fine Clothing">Albert's Fine Clothing</option>
-                                    <option value="Bean There Done That">Bean There Done That</option>
-                                    <option value="Brewed Awakenings">Brewed Awakenings</option>
-                                    <option value="Carlyle Chemical Inc.">Carlyle Chemical Inc.</option>
-                                    <option value="Chostus Hotel">Chostus Hotel</option>
-                                    <option value="Coffee Cameleon">Coffee Cameleon</option>
-                                    <option value="Coffee Shack">Coffee Shack</option>
-                                    <option value="Daily Dealz">Daily Dealz</option>
-                                    <option value="Desafio Golf Course">Desafio Golf Course</option>
-                                    <option value="Frank's Fuel">Frank's Fuel</option>
-                                    <option value="Frydos Autosupply n' More">Frydos Autosupply n' More</option>
-                                    <option value="Gelatogalore">Gelatogalore</option>
-                                    <option value="General Grocer">General Grocer</option>
-                                    <option value="Guy's Gyros">Guy's Gyros</option>
-                                    <option value="Hallowed Grounds">Hallowed Grounds</option>
-                                    <option value="Hippokampos">Hippokampos</option>
-                                    <option value="Jack's Magical Beans">Jack's Magical Beans</option>
-                                    <option value="Kalami Kafenion">Kalami Kafenion</option>
-                                    <option value="Katerinas Cafe">Katerina's Café</option>
-                                    <option value="Kronos Mart">Kronos Mart</option>
-                                    <option value="Kronos Pipe and Irrigation">Kronos Pipe and Irrigation</option>
-                                    <option value="Maximum Iron and Steel">Maximum Iron and Steel</option>
-                                    <option value="Nationwide Refinery">Nationwide Refinery</option>
-                                    <option value="Octavio's Office Supplies">Octavio's Office Supplies</option>
-                                    <option value="Ouzeri Elian">Ouzeri Elian</option>
-                                    <option value="Robert and Sons">Robert and Sons</option>
-                                    <option value="Shoppers' Delight">Shoppers' Delight</option>
-                                    <option value="Stewart and Sons Fabrication">Stewart and Sons Fabrication</option>
-                                    <option value="U-Pump">U-Pump</option>
-                                </select>
+                <div class="tab-pane fade" id="tabs-cc" role="tabpanel" aria-labelledby="tab-businesses">   
+                        <div class=" panel panel-default">
+                            <div id="cc-time-info">
+                                <span class="row">
+                                    <span class="col-2"><label>Business:</label></span>
+                                    <span class="col-8">
+                                        <select id="ccmetric-select" class="form-select form-control" >
+                                        <option selected value="cc base">Select the business</option>
+                                        <option value="Abila Airport">Abila Airport</option>
+                                        <option value="Abila Scrapyard">Abila Scrapyard</option>
+                                        <option value="Abila Zacharo">Abila Zacharo</option>
+                                        <option value="Ahaggo Museum">Ahaggo Museum</option>
+                                        <option value="Albert's Fine Clothing">Albert's Fine Clothing</option>
+                                        <option value="Bean There Done That">Bean There Done That</option>
+                                        <option value="Brewed Awakenings">Brewed Awakenings</option>
+                                        <option value="Carlyle Chemical Inc.">Carlyle Chemical Inc.</option>
+                                        <option value="Chostus Hotel">Chostus Hotel</option>
+                                        <option value="Coffee Cameleon">Coffee Cameleon</option>
+                                        <option value="Coffee Shack">Coffee Shack</option>
+                                        <option value="Daily Dealz">Daily Dealz</option>
+                                        <option value="Desafio Golf Course">Desafio Golf Course</option>
+                                        <option value="Frank's Fuel">Frank's Fuel</option>
+                                        <option value="Frydos Autosupply n' More">Frydos Autosupply n' More</option>
+                                        <option value="Gelatogalore">Gelatogalore</option>
+                                        <option value="General Grocer">General Grocer</option>
+                                        <option value="Guy's Gyros">Guy's Gyros</option>
+                                        <option value="Hallowed Grounds">Hallowed Grounds</option>
+                                        <option value="Hippokampos">Hippokampos</option>
+                                        <option value="Jack's Magical Beans">Jack's Magical Beans</option>
+                                        <option value="Kalami Kafenion">Kalami Kafenion</option>
+                                        <option value="Katerinas Cafe">Katerina's Café</option>
+                                        <option value="Kronos Mart">Kronos Mart</option>
+                                        <option value="Kronos Pipe and Irrigation">Kronos Pipe and Irrigation</option>
+                                        <option value="Maximum Iron and Steel">Maximum Iron and Steel</option>
+                                        <option value="Nationwide Refinery">Nationwide Refinery</option>
+                                        <option value="Octavio's Office Supplies">Octavio's Office Supplies</option>
+                                        <option value="Ouzeri Elian">Ouzeri Elian</option>
+                                        <option value="Robert and Sons">Robert and Sons</option>
+                                        <option value="Shoppers' Delight">Shoppers' Delight</option>
+                                        <option value="Stewart and Sons Fabrication">Stewart and Sons Fabrication</option>
+                                        <option value="U-Pump">U-Pump</option>
+                                    </select>
+                                    </span>
                                 </span>
-                            </span>
-
-                            <h2> Aggregate Business Performance (CC) </h2>
-                         
-
-                            <div id="cc-time-graph-container" class="creditBarGraph">
-                                <h2>Business Performance by CC over time</h2>
+                               <div class="row">
+                                    <div id="cc-time-graph-container" class="creditBarGraph col-9">
+                                       
+                                    </div>
+    
+                                    <div id="tooltip" class="creditTooltip col-3">
+                                        <h4>CC Tooltip</h4>
+                                        <p id="cc-name"> Name: </p>
+                                        <p id="cc-price"> Amount paid: </p>
+                                        <p id="cc-revenue"> Total spent: </p>
+                                        <p id="cc-division"> Division: </p>
+                                        <p id="cc-title">Title: </p>
+                                    </div>
+                               </div>
                             </div>
-
-                            <div id="tooltip" class="creditTooltip">
-                                <h4>CC Tooltip</h4>
-                                <p id="cc-name"> Name: </p>
-                                <p id="cc-price"> Amount paid: </p>
-                                <p id="cc-revenue"> Total spent: </p>
-                                <p id="cc-division"> Division: </p>
-                                <p id="cc-title">Title: </p>
-                            </div>
-                            
                         </div>
 
-                            <br>
-                            <br>
+                </div>
+                <div class="tab-pane fade row" id="tabs-loyalty" role="tabpanel" aria-labelledby="tab-loyalty">   
 
+                   <div class ="panel  panel-default">
                         <div id="loyalty-time-container"> 
                             
                             <span class="row">
                                 <span class="col-4">
                                     <label>Business:</label>
                                 </span>
-                                <span class="col-4">
+                                <span class="col-8">
                                     <select id="lometric-select" class="form-select form-control" >
-                                    <option selected value="cc base">Select</option>
+                                    <option selected value="cc base">Select Business</option>
                                     <option value="Abila Airport">Abila Airport</option>
                                     <option value="Abila Scrapyard">Abila Scrapyard</option>
                                     <option value="Abila Zacharo">Abila Zacharo</option>
@@ -254,23 +245,24 @@
                                 </span>
                             </span>
 
-                            <h2> Aggregate Business Performance (Loyalty) </h2>
-                            <div id="loyalty-time-graph-container">
-                                <h3>Business Performance by Loyalty over time</h3>
-                            </div>
+                        <div class="row">
+                                <div id="loyalty-time-graph-container" class="col-9">
+                                </div>
 
-                            <div id="loyalty-tooltip" class="loyaltyTooltip">
-                                <h4>CC Tooltip</h4>
-                                <p id="lo-name"> Name: </p>
-                                <p id="lo-price"> Amount paid: </p>
-                                <p id="lo-revenue"> Total spent: </p>
-                                <p id="lo-division"> Division: </p>
-                                <p id="lo-title">Title: </p>
-                            </div>
+                                <div id="loyalty-tooltip" class="loyaltyTooltip col-3">
+                                    <h4>Loyalty Tooltip</h4>
+                                    <p id="lo-name"> Name: </p>
+                                    <p id="lo-price"> Amount paid: </p>
+                                    <p id="lo-revenue"> Total spent: </p>
+                                    <p id="lo-division"> Division: </p>
+                                    <p id="lo-title">Title: </p>
+                                </div>
+                        </div>
                             
 
                         </div>
-                    </div>
+                   </div>
+                </div>
                 </div>
             </div>
         </div>
