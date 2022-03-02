@@ -2,327 +2,327 @@
   "nodes": [
     {
       "name": "Edvard Vann",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#E628EE",
+      "department": "Security",
+      "title": "Perimeter Control"
     },
     {
       "name": "Stenig Fusil",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#E628EE",
+      "department": "Security",
+      "title": "Building Control"
     },
     {
       "name": "Sven Flecha",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#EE4B28",
+      "department": "Information Technology",
+      "title": "IT Technician"
     },
     {
       "name": "Cornelia Lais",
-      "color": "",
-      "department": "",
+      "color": "#E5E5E5",
+      "department": "Employment Unknown",
       "title": ""
     },
     {
       "name": "Mat Bramar",
-      "color": "",
-      "department": "",
+      "color": "#E5E5E5",
+      "department": "Employment Unknown",
       "title": ""
     },
     {
       "name": "Brand Tempestad",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#288DEE",
+      "department": "Engineering",
+      "title": "Drill Technician"
     },
     {
       "name": "Hennie Osvaldo",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#E628EE",
+      "department": "Security",
+      "title": "Perimeter Control"
     },
     {
       "name": "Varja Lagos",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#E628EE",
+      "department": "Security",
+      "title": "Badging Office"
     },
     {
       "name": "Inga Ferro",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#E628EE",
+      "department": "Security",
+      "title": "Site Control"
     },
     {
       "name": "Ruscella Mies Haber",
-      "color": "",
-      "department": "",
+      "color": "#E5E5E5",
+      "department": "Employment Unknown",
       "title": ""
     },
     {
       "name": "Loreto Bodrogi",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#E628EE",
+      "department": "Security",
+      "title": "Site Control"
     },
     {
       "name": "Minke Mies",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#E628EE",
+      "department": "Security",
+      "title": "Perimeter Control"
     },
     {
       "name": "Felix Resumir",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#E628EE",
+      "department": "Security",
+      "title": "Security Group Manager"
     },
     {
       "name": "Kanon Herrero",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#E628EE",
+      "department": "Security",
+      "title": "Badging Office"
     },
     {
       "name": "Linda Lagos",
-      "color": "",
-      "department": "",
+      "color": "#E5E5E5",
+      "department": "Employment Unknown",
       "title": ""
     },
     {
       "name": "Dante Coginian",
-      "color": "",
-      "department": "",
+      "color": "#E5E5E5",
+      "department": "Employment Unknown",
       "title": ""
     },
     {
       "name": "Isia Vann",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#E628EE",
+      "department": "Security",
+      "title": "Perimeter Control"
     },
     {
       "name": "Hideki Cocinaro",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#E628EE",
+      "department": "Security",
+      "title": "Site Control"
     },
     {
       "name": "Birgitta Frente",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#288DEE",
+      "department": "Engineering",
+      "title": "Geologist"
     },
     {
       "name": "Emile Arpa",
-      "color": "",
-      "department": "",
+      "color": "#E5E5E5",
+      "department": "Employment Unknown",
       "title": ""
     },
     {
       "name": "Kare Orilla",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#288DEE",
+      "department": "Engineering",
+      "title": "Drill Technician"
     },
     {
       "name": "Nils Calixto",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#EE4B28",
+      "department": "Information Technology",
+      "title": "IT Technician"
     },
     {
       "name": "Rachel Pantanal",
-      "color": "",
-      "department": "",
+      "color": "#E5E5E5",
+      "department": "Employment Unknown",
       "title": ""
     },
     {
       "name": "Lucas Alcazar",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#EE4B28",
+      "department": "Information Technology",
+      "title": "IT Helpdesk"
     },
     {
       "name": "Anda Ribera",
-      "color": "",
-      "department": "",
+      "color": "#E5E5E5",
+      "department": "Employment Unknown",
       "title": ""
     },
     {
       "name": "Lidelse Dedos",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#288DEE",
+      "department": "Engineering",
+      "title": "Engineering Group Manager"
     },
     {
       "name": "Marin Onda",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#288DEE",
+      "department": "Engineering",
+      "title": "Drill Site Manager"
     },
     {
       "name": "Sten Sanjorge Jr.",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#28EEE4",
+      "department": "Executive",
+      "title": "President/CEO"
     },
     {
       "name": "Linnea Bergen",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#EE4B28",
+      "department": "Information Technology",
+      "title": "IT Group Manager"
     },
     {
       "name": "Bertrand Ovan",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#E0EE28",
+      "department": "Facilities",
+      "title": "Facilities Group Manager"
     },
     {
       "name": "Adra Nubarron",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#288DEE",
+      "department": "Engineering",
+      "title": "Geologist"
     },
     {
       "name": "Carla Forluniau",
-      "color": "",
-      "department": "",
+      "color": "#E5E5E5",
+      "department": "Employment Unknown",
       "title": ""
     },
     {
       "name": "Albina Hafon",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#E0EE28",
+      "department": "Facilities",
+      "title": "Truck Driver"
     },
     {
       "name": "Henk Mies",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#E0EE28",
+      "department": "Facilities",
+      "title": "Truck Driver"
     },
     {
       "name": "Benito Hawelon",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#E0EE28",
+      "department": "Facilities",
+      "title": "Truck Driver"
     },
     {
       "name": "Dylan Scozzese",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#E0EE28",
+      "department": "Facilities",
+      "title": "Truck Driver"
     },
     {
       "name": "Claudio Hawelon",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#E0EE28",
+      "department": "Facilities",
+      "title": "Truck Driver"
     },
     {
       "name": "Irene Nant",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#E0EE28",
+      "department": "Facilities",
+      "title": "Truck Driver"
     },
     {
       "name": "Cecilia Morluniau",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#E0EE28",
+      "department": "Facilities",
+      "title": "Truck Driver"
     },
     {
       "name": "Valeria Morlun",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#E0EE28",
+      "department": "Facilities",
+      "title": "Truck Driver"
     },
     {
       "name": "Adan Morlun",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#E0EE28",
+      "department": "Facilities",
+      "title": "Truck Driver"
     },
     {
       "name": "Varro Awelon",
-      "color": "",
-      "department": "",
+      "color": "#E5E5E5",
+      "department": "Employment Unknown",
       "title": ""
     },
     {
       "name": "Lars Azada",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#288DEE",
+      "department": "Engineering",
+      "title": "Engineer"
     },
     {
       "name": "Felix Balas",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#288DEE",
+      "department": "Engineering",
+      "title": "Engineer"
     },
     {
       "name": "Axel Calzas",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#288DEE",
+      "department": "Engineering",
+      "title": "Drill Technician"
     },
     {
       "name": "Gustav Cazar",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#288DEE",
+      "department": "Engineering",
+      "title": "Hydraulic Technician"
     },
     {
       "name": "Vira Frente",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#288DEE",
+      "department": "Engineering",
+      "title": "Hydraulic Technician"
     },
     {
       "name": "Ingrid Barranco",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#28EEE4",
+      "department": "Executive",
+      "title": "SVP/CFO"
     },
     {
       "name": "Isande Borrasca",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#288DEE",
+      "department": "Engineering",
+      "title": "Drill Technician"
     },
     {
       "name": "Ada Campo-Corrente",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#28EEE4",
+      "department": "Executive",
+      "title": "SVP/CIO"
     },
     {
       "name": "Isak Baza",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#EE4B28",
+      "department": "Information Technology",
+      "title": "IT Technician"
     },
     {
       "name": "Elsa Orilla",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#288DEE",
+      "department": "Engineering",
+      "title": "Drill Technician"
     },
     {
       "name": "Orhan Strum",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#28EEE4",
+      "department": "Executive",
+      "title": "SVP/COO"
     },
     {
       "name": "Willem Vasco-Pais",
-      "color": "",
-      "department": "",
-      "title": ""
+      "color": "#28EEE4",
+      "department": "Executive",
+      "title": "Environmental Safety Advisor"
     }
   ],
   "links": [
