@@ -15,8 +15,8 @@ const svg3 = loSVG
 function loUpdate(lodata) {
 
     var businessOption = document.getElementById('lometric-select').value;
-    console.log(businessOption)
-    console.log(lodata)
+    //.log(businessOption)
+    //.log(lodata)
 
     // determine yMax
 
@@ -28,12 +28,12 @@ function loUpdate(lodata) {
         revArray.push(rev);
     });
 
-    console.log(revArray)
+    //.log(revArray)
 
     yMaxLO = Math.max(...revArray);
-    console.log(yMaxLO);
+    //.log(yMaxLO);
 
-    console.log(lodata.length);
+    //.log(lodata.length);
 
     const xScaleLO = d3.scaleBand()
         .domain(d3.range(lodata.length))
@@ -68,8 +68,8 @@ function loUpdate(lodata) {
         })
         .attr("width", xScaleLO.bandwidth())
         .on("mouseover", function(event, d) {
-            console.log(d)
-            console.log(this)
+            //.log(d)
+            //.log(this)
             var name = d.FirstName + " " + d.LastName
             var division = d.CurrentEmploymentType
             var title = d.CurrentEmploymentTitle
@@ -80,7 +80,7 @@ function loUpdate(lodata) {
             document.getElementById("lo-revenue").innerHTML = "Total revenue: $" + revenue;
             document.getElementById("lo-division").innerHTML = "Division: " + division;
             document.getElementById("lo-title").innerHTML = "Title: " + title;
-            console.log("moused over")
+            //.log("moused over")
         })
         .on("mouseout", function(d) {
             // var name = ""
@@ -128,13 +128,13 @@ function loUpdate(lodata) {
 function loChangeData() {
     // // Load the file indicated by the select menu
     var selectOption = document.getElementById('lometric-select').value;
-    console.log(selectOption)
+    //.log(selectOption)
 
     
     if (selectOption != "Select") {
-    console.log("current datafile is " + selectOption)
+    //.log("current datafile is " + selectOption)
     dataFileName = "agglo_" + selectOption + ".csv"
-    console.log(dataFileName)
+    //.log(dataFileName)
 
     d3.csv('business_loyalty_data/' + dataFileName).then(loUpdate);
 

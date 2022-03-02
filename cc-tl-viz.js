@@ -15,8 +15,8 @@ const svg2 = ccSVG
 function ccUpdate(ccdata) {
 
     var businessOption = document.getElementById('ccmetric-select').value;
-    console.log(businessOption)
-    console.log(ccdata)
+    //.log(businessOption)
+    //.log(ccdata)
 
     // tip = d3.tip().attr('class', 'd3-tip').html(function(d) { 
     //     return d; });
@@ -32,9 +32,9 @@ function ccUpdate(ccdata) {
     });
 
     yMaxCC = Math.max(...revArray);
-    console.log(yMaxCC);
+    //.log(yMaxCC);
 
-    console.log(ccdata.length);
+    //.log(ccdata.length);
 
     const xScaleCC = d3.scaleBand()
         .domain(d3.range(ccdata.length))
@@ -69,8 +69,8 @@ function ccUpdate(ccdata) {
         })
         .attr("width", xScaleCC.bandwidth())
         .on("mouseover", function(event, d) {
-            console.log(d)
-            console.log(this)
+            //.log(d)
+            //.log(this)
             var name = d.FirstName + " " + d.LastName
             var division = d.CurrentEmploymentType
             var title = d.CurrentEmploymentTitle
@@ -81,7 +81,7 @@ function ccUpdate(ccdata) {
             document.getElementById("cc-revenue").innerHTML = "Total revenue: $" + revenue;
             document.getElementById("cc-division").innerHTML = "Division: " + division;
             document.getElementById("cc-title").innerHTML = "Title: " + title;
-            console.log("moused over")
+            //.log("moused over")
         })
         .on("mouseout", function(d) {
             // var name = ""
@@ -130,13 +130,13 @@ function ccUpdate(ccdata) {
 function ccChangeData() {
     // // Load the file indicated by the select menu
     var selectOption = document.getElementById('ccmetric-select').value;
-    console.log(selectOption)
+    //.log(selectOption)
 
     
     if (selectOption != "Select") {
-    console.log("current datafile is " + selectOption)
+    //.log("current datafile is " + selectOption)
     dataFileName = "aggcc_" + selectOption + ".csv"
-    console.log(dataFileName)
+    //.log(dataFileName)
 
     d3.csv('business_cc_data/' + dataFileName).then(ccUpdate);
 
