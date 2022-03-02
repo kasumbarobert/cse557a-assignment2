@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Business Performance Visualization</title>
+    <!-- Skeleton code comes from code written in 457A, FL 2020 from my (Vishesh's) a1b assignment  -->
+    <!-- Other sources include my course project and a3 from 457A, FL 2020 -->
+    <style>
+        div {
+            display: inline-block;
+            border: 1px solid lightgray;
+            margin: 1em;
+        }
+
+        div, span {
+            padding: 1em;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<span>
+    <label>Date:</label>
+    <select id="date" >
+        <option selected value="base">Select</option>
+        <option value="1-6-2014">1-6-2014</option>
+        <option value="1-7-2014">1-7-2014</option>
+        <option value="1-8-2014">1-8-2014</option>
+        <option value="1-9-2014">1-9-2014</option>
+        <option value="1-10-2014">1-10-2014</option>
+        <option value="1-11-2014">1-11-2014</option>
+        <option value="1-12-2014">1-12-2014</option>
+        <option value="1-13-2014">1-13-2014</option>
+        <option value="1-14-2014">1-14-2014</option>
+        <option value="1-15-2014">1-15-2014</option>
+        <option value="1-16-2014">1-16-2014</option>
+        <option value="1-17-2014">1-17-2014</option>
+        <option value="1-18-2014">1-18-2014</option>
+        <option value="1-19-2014">1-19-2014</option>
+    </select>
+</span>
+
+<span>
+    <label>Performance Metric:</label>
+    <select id="pmetric" >
+        <option selected value="revenue">Revenue</option>
+        <option value="frequency">Purchase Frequency</option>
+    </select>
+</span>
+
+<br/>
+
+<h2>Business Performance Measures</h2>
+<div id="bgraph-container">
+    <h3>Credit Card Histories</h3>
+</div>
+
+<br>
+
+<span>
+    <label>Business:</label>
+    <select id="ccmetric-select" >
+        <option selected value="cc base">Select</option>
+        <option value="Abila Airport">Abila Airport</option>
+        <option value="Abila Scrapyard">Abila Scrapyard</option>
+        <option value="Abila Zacharo">Abila Zacharo</option>
+        <option value="Ahaggo Museum">Ahaggo Museum</option>
+        <option value="Albert's Fine Clothing">Albert's Fine Clothing</option>
+        <option value="Bean There Done That">Bean There Done That</option>
+        <option value="Brewed Awakenings">Brewed Awakenings</option>
+        <option value="Carlyle Chemical Inc.">Carlyle Chemical Inc.</option>
+        <option value="Chostus Hotel">Chostus Hotel</option>
+        <option value="Coffee Cameleon">Coffee Cameleon</option>
+        <option value="Coffee Shack">Coffee Shack</option>
+        <option value="Daily Dealz">Daily Dealz</option>
+        <option value="Desafio Golf Course">Desafio Golf Course</option>
+        <option value="Frank's Fuel">Frank's Fuel</option>
+        <option value="Frydos Autosupply n' More">Frydos Autosupply n' More</option>
+        <option value="Gelatogalore">Gelatogalore</option>
+        <option value="General Grocer">General Grocer</option>
+        <option value="Guy's Gyros">Guy's Gyros</option>
+        <option value="Hallowed Grounds">Hallowed Grounds</option>
+        <option value="Hippokampos">Hippokampos</option>
+        <option value="Jack's Magical Beans">Jack's Magical Beans</option>
+        <option value="Kalami Kafenion">Kalami Kafenion</option>
+        <option value="Katerinas Cafe">Katerina's Café</option>
+        <option value="Kronos Mart">Kronos Mart</option>
+        <option value="Kronos Pipe and Irrigation">Kronos Pipe and Irrigation</option>
+        <option value="Maximum Iron and Steel">Maximum Iron and Steel</option>
+        <option value="Nationwide Refinery">Nationwide Refinery</option>
+        <option value="Octavio's Office Supplies">Octavio's Office Supplies</option>
+        <option value="Ouzeri Elian">Ouzeri Elian</option>
+        <option value="Robert and Sons">Robert and Sons</option>
+        <option value="Shoppers' Delight">Shoppers' Delight</option>
+        <option value="Stewart and Sons Fabrication">Stewart and Sons Fabrication</option>
+        <option value="U-Pump">U-Pump</option>
+    </select>
+</span>
+
+<h2> Aggregate Business Performance (CC) </h2>
+<div id="cc-time-graph-container">
+    <h3>Business Performance by CC over time</h3>
+</div>
+
+<br>
+
+<span>
+    <label>Business:</label>
+    <select id="lometric-select" >
+        <option selected value="cc base">Select</option>
+        <option value="Abila Airport">Abila Airport</option>
+        <option value="Abila Scrapyard">Abila Scrapyard</option>
+        <option value="Abila Zacharo">Abila Zacharo</option>
+        <option value="Ahaggo Museum">Ahaggo Museum</option>
+        <option value="Albert's Fine Clothing">Albert's Fine Clothing</option>
+        <option value="Bean There Done That">Bean There Done That</option>
+        <option value="Brewed Awakenings">Brewed Awakenings</option>
+        <option value="Carlyle Chemical Inc.">Carlyle Chemical Inc.</option>
+        <option value="Chostus Hotel">Chostus Hotel</option>
+        <option value="Coffee Cameleon">Coffee Cameleon</option>
+        <option value="Coffee Shack">Coffee Shack</option>
+        <option value="Desafio Golf Course">Desafio Golf Course</option>
+        <option value="Frank's Fuel">Frank's Fuel</option>
+        <option value="Frydos Autosupply n' More">Frydos Autosupply n' More</option>
+        <option value="Gelatogalore">Gelatogalore</option>
+        <option value="General Grocer">General Grocer</option>
+        <option value="Guy's Gyros">Guy's Gyros</option>
+        <option value="Hallowed Grounds">Hallowed Grounds</option>
+        <option value="Hippokampos">Hippokampos</option>
+        <option value="Jack's Magical Beans">Jack's Magical Beans</option>
+        <option value="Kalami Kafenion">Kalami Kafenion</option>
+        <option value="Katerinas Cafe">Katerina's Café</option>
+        <option value="Kronos Mart">Kronos Mart</option>
+        <option value="Kronos Pipe and Irrigation">Kronos Pipe and Irrigation</option>
+        <option value="Maximum Iron and Steel">Maximum Iron and Steel</option>
+        <option value="Nationwide Refinery">Nationwide Refinery</option>
+        <option value="Octavio's Office Supplies">Octavio's Office Supplies</option>
+        <option value="Ouzeri Elian">Ouzeri Elian</option>
+        <option value="Roberts and Sons">Robert and Sons</option>
+        <option value="Shoppers' Delight">Shoppers' Delight</option>
+        <option value="Stewart and Sons Fabrication">Stewart and Sons Fabrication</option>
+        <option value="U-Pump">U-Pump</option>
+    </select>
+</span>
+
+<h2> Aggregate Business Performance (Loyalty) </h2>
+<div id="loyalty-time-graph-container">
+    <h3>Business Performance by Loyalty over time</h3>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/d3js/6.1.1/d3.min.js"></script>
+<script src="agg-data.js"></script>
+<script src="cc-tl-viz.js"></script>
+<script src="loyalty-tl-viz.js"></script>
+
+</body>
+</html>
