@@ -51,7 +51,7 @@ function loUpdate(lodata) {
     svg3.selectAll("g").remove()
 
     svg3.append("g")
-    .attr("fill", "blue")
+    .attr("fill", "green")
     .selectAll("rect")
     .data(lodata)
     .join("rect")
