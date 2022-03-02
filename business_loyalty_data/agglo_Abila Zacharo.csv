@@ -1,15 +1,15 @@
-,date,revenue
-0,1/6/2014,95.12
-1,1/7/2014,209.45
-2,1/8/2014,277.84000000000003
-3,1/9/2014,164.59
-4,1/10/2014,97.74
-5,1/11/2014,17.31
-6,1/12/2014,36.2
-7,1/13/2014,169.62
-8,1/14/2014,135.41000000000003
-9,1/15/2014,127.54
-10,1/16/2014,77.53999999999999
-11,1/17/2014,113.38000000000001
-12,1/18/2014,24.38
-13,1/19/2014,22.36
+,date,revenue,location,price,FirstName,LastName,CurrentEmploymentType,CurrentEmploymentTitle
+1,1/6/2014,160.46,Abila Zacharo,50.14,Elsa,Orilla,Engineering,Drill Technician
+25,1/7/2014,124.6,Abila Zacharo,32.4,Carla,Forluniau,Administration,Assistant to IT Group Manager
+47,1/8/2014,148.69,Abila Zacharo,36.85,Willem,Vasco-Pais,Executive,Environmental Safety Advisor
+73,1/9/2014,129.66,Abila Zacharo,48.39,Elsa,Orilla,Engineering,Drill Technician
+97,1/10/2014,171.44,Abila Zacharo,36.73,Marin,Onda,Engineering,Drill Site Manager
+119,1/11/2014,189.56,Abila Zacharo,89.54,Isande,Borrasca,Engineering,Drill Technician
+131,1/12/2014,11.2,Abila Zacharo,11.2,Brand,Tempestad,Engineering,Drill Technician
+146,1/13/2014,265.36,Abila Zacharo,64.5,Elsa,Orilla,Engineering,Drill Technician
+170,1/14/2014,89.87,Abila Zacharo,31.09,Linda,Lagos,Administration,Assistant to COO
+192,1/15/2014,148.49,Abila Zacharo,33.8,Bertrand,Ovan,Facilities,Facilities Group Manager
+218,1/16/2014,128.83,Abila Zacharo,64.71,Elsa,Orilla,Engineering,Drill Technician
+241,1/17/2014,112.07,Abila Zacharo,39.67,Isia,Vann,Security,Perimeter Control
+261,1/18/2014,241.51,Abila Zacharo,111.93,Orhan,Strum,Executive,SVP/COO
+277,1/19/2014,47.8,Abila Zacharo,47.8,Felix,Resumir,Security,Security Group Manager

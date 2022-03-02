@@ -1,15 +1,14 @@
-,date,revenue
-0,1/6/2014,5929.61
-1,1/7/2014,9018.509999999998
-2,1/8/2014,5492.299999999999
-3,1/9/2014,11872.17
-4,1/10/2014,0
-5,1/11/2014,0
-6,1/12/2014,0
-7,1/13/2014,10262.58
-8,1/14/2014,10835.57
-9,1/15/2014,4028.2799999999997
-10,1/16/2014,11765.779999999999
-11,1/17/2014,0
-12,1/18/2014,0
-13,1/19/2014,0
+,date,revenue,location,price,FirstName,LastName,CurrentEmploymentType,CurrentEmploymentTitle
+14,1/6/2014,101.53,Kalami Kafenion,30.1,Varja,Lagos,Security,Badging Office
+39,1/7/2014,145.61999999999995,Kalami Kafenion,45.05,Elsa,Orilla,Engineering,Drill Technician
+64,1/8/2014,201.71,Kalami Kafenion,34.98,Varro,Awelon,Facilities,Janitor
+88,1/9/2014,115.67000000000002,Kalami Kafenion,35.99,Anda,Ribera,Administration,Assistant to CFO
+112,1/10/2014,188.97,Kalami Kafenion,101.5,Elsa,Orilla,Engineering,Drill Technician
+127,1/11/2014,149.07999999999996,Kalami Kafenion,50.2,Elsa,Orilla,Engineering,Drill Technician
+140,1/12/2014,40.63,Kalami Kafenion,26.04,Isande,Borrasca,Engineering,Drill Technician
+160,1/13/2014,20.33,Kalami Kafenion,20.33,Cornelia,Lais,Administration,Assistant to Security Group Manager
+185,1/14/2014,148.52,Kalami Kafenion,33.13,Ruscella,Mies Haber,Administration,Assistant to Engineering Group Manager
+207,1/15/2014,180.89,Kalami Kafenion,38.5,Ruscella,Mies Haber,Administration,Assistant to Engineering Group Manager
+232,1/16/2014,87.66,Kalami Kafenion,31.38,Felix,Balas,Engineering,Engineer
+256,1/17/2014,238.06,Kalami Kafenion,140.78,Linnea,Bergen,Information Technology,IT Group Manager
+271,1/18/2014,253.24,Kalami Kafenion,53.36,Felix,Resumir,Security,Security Group Manager

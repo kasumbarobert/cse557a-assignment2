@@ -1,15 +1,12 @@
-,date,revenue
-0,1/6/2014,293.67
-1,1/7/2014,0
-2,1/8/2014,0
-3,1/9/2014,258.43
-4,1/10/2014,279.53
-5,1/11/2014,238.52
-6,1/12/2014,688.9
-7,1/13/2014,360.83000000000004
-8,1/14/2014,0
-9,1/15/2014,102.0
-10,1/16/2014,117.53
-11,1/17/2014,424.34
-12,1/18/2014,258.33
-13,1/19/2014,30.39
+,date,revenue,location,price,FirstName,LastName,CurrentEmploymentType,CurrentEmploymentTitle
+20,1/6/2014,293.67,Shoppers' Delight,293.67,Isia,Vann,Security,Perimeter Control
+95,1/9/2014,258.43,Shoppers' Delight,258.43,Rachel,Pantanal,Administration,Assistant to CIO
+117,1/10/2014,279.53,Shoppers' Delight,279.53,Inga,Ferro,Security,Site Control
+130,1/11/2014,238.52,Shoppers' Delight,238.52,Carla,Forluniau,Administration,Assistant to IT Group Manager
+144,1/12/2014,688.9,Shoppers' Delight,211.03,Sven,Flecha,Information Technology,IT Technician
+166,1/13/2014,360.83,Shoppers' Delight,216.43,Loreto,Bodrogi,Security,Site Control
+214,1/15/2014,102.0,Shoppers' Delight,102.0,Ada,Campo-Corrente,Executive,SVP/CIO
+239,1/16/2014,117.53,Shoppers' Delight,100.69,Axel,Calzas,Engineering,Drill Technician
+259,1/17/2014,424.34,Shoppers' Delight,269.33,Kanon,Herrero,Security,Badging Office
+276,1/18/2014,258.33,Shoppers' Delight,258.33,Orhan,Strum,Executive,SVP/COO
+288,1/19/2014,30.39,Shoppers' Delight,30.39,Adra,Nubarron,Engineering,Geologist

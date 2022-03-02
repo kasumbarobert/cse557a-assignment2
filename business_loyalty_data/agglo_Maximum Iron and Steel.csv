@@ -1,15 +1,7 @@
-,date,revenue
-0,1/6/2014,372.5
-1,1/7/2014,368.82000000000005
-2,1/8/2014,347.6099999999999
-3,1/9/2014,295.56
-4,1/10/2014,235.98000000000002
-5,1/11/2014,722.7
-6,1/12/2014,304.97999999999996
-7,1/13/2014,352.09
-8,1/14/2014,404.79
-9,1/15/2014,408.2000000000001
-10,1/16/2014,454.0
-11,1/17/2014,366.62000000000006
-12,1/18/2014,520.5
-13,1/19/2014,250.95999999999998
+,date,revenue,location,price,FirstName,LastName,CurrentEmploymentType,CurrentEmploymentTitle
+17,1/6/2014,2859.51,Maximum Iron and Steel,2859.51,Albina,Hafon,Facilities,Truck Driver
+42,1/7/2014,3207.31,Maximum Iron and Steel,3207.31,Irene,Nant,Facilities,Truck Driver
+67,1/8/2014,3136.01,Maximum Iron and Steel,3136.01,Irene,Nant,Facilities,Truck Driver
+92,1/9/2014,1527.14,Maximum Iron and Steel,1527.14,Irene,Nant,Facilities,Truck Driver
+163,1/13/2014,689.85,Maximum Iron and Steel,689.85,Albina,Hafon,Facilities,Truck Driver
+211,1/15/2014,4788.22,Maximum Iron and Steel,4788.22,Irene,Nant,Facilities,Truck Driver

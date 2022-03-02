@@ -1,15 +1,15 @@
-,date,revenue
-0,1/6/2014,3959.66
-1,1/7/2014,3827.2
-2,1/8/2014,9885.400000000001
-3,1/9/2014,3820.92
-4,1/10/2014,3717.17
-5,1/11/2014,0
-6,1/12/2014,0
-7,1/13/2014,1718.96
-8,1/14/2014,7896.44
-9,1/15/2014,6112.85
-10,1/16/2014,2234.17
-11,1/17/2014,0
-12,1/18/2014,0
-13,1/19/2014,0
+,date,revenue,location,price,FirstName,LastName,CurrentEmploymentType,CurrentEmploymentTitle
+9,1/6/2014,95.12,Gelatogalore,36.33,Kare,Orilla,Engineering,Drill Technician
+34,1/7/2014,209.45,Gelatogalore,36.5,Rachel,Pantanal,Administration,Assistant to CIO
+58,1/8/2014,277.84000000000003,Gelatogalore,50.36,Elsa,Orilla,Engineering,Drill Technician
+82,1/9/2014,164.59,Gelatogalore,36.75,Varro,Awelon,Facilities,Janitor
+106,1/10/2014,97.74,Gelatogalore,39.4,Bertrand,Ovan,Facilities,Facilities Group Manager
+123,1/11/2014,17.31,Gelatogalore,17.31,Birgitta,Frente,Engineering,Geologist
+136,1/12/2014,36.2,Gelatogalore,36.2,Elsa,Orilla,Engineering,Drill Technician
+155,1/13/2014,169.62,Gelatogalore,37.17,Rachel,Pantanal,Administration,Assistant to CIO
+180,1/14/2014,135.41000000000003,Gelatogalore,39.17,Willem,Vasco-Pais,Executive,Environmental Safety Advisor
+201,1/15/2014,127.54,Gelatogalore,39.4,Inga,Ferro,Security,Site Control
+227,1/16/2014,77.53999999999998,Gelatogalore,32.4,Lidelse,Dedos,Engineering,Engineering Group Manager
+250,1/17/2014,113.38,Gelatogalore,34.59,Inga,Ferro,Security,Site Control
+267,1/18/2014,24.38,Gelatogalore,24.38,Rachel,Pantanal,Administration,Assistant to CIO
+282,1/19/2014,22.36,Gelatogalore,22.36,Vira,Frente,Engineering,Hydraulic Technician

@@ -1,15 +1,15 @@
-,date,revenue
-0,1/6/2014,2144.62
-1,1/7/2014,2984.23
-2,1/8/2014,3412.0299999999997
-3,1/9/2014,5478.25
-4,1/10/2014,8269.59
-5,1/11/2014,0
-6,1/12/2014,0
-7,1/13/2014,4071.95
-8,1/14/2014,818.71
-9,1/15/2014,4485.38
-10,1/16/2014,5403.610000000001
-11,1/17/2014,1753.17
-12,1/18/2014,0
-13,1/19/2014,0
+,date,revenue,location,price,FirstName,LastName,CurrentEmploymentType,CurrentEmploymentTitle
+2,1/6/2014,398.66,Albert's Fine Clothing,276.9,Lucas,Alcazar,Information Technology,IT Helpdesk
+26,1/7/2014,307.27,Albert's Fine Clothing,228.36,Vira,Frente,Engineering,Hydraulic Technician
+48,1/8/2014,136.01,Albert's Fine Clothing,136.01,Felix,Balas,Engineering,Engineer
+74,1/9/2014,454.5,Albert's Fine Clothing,229.98,Ada,Campo-Corrente,Executive,SVP/CIO
+98,1/10/2014,126.13,Albert's Fine Clothing,126.13,Vira,Frente,Engineering,Hydraulic Technician
+121,1/11/2014,316.8,Albert's Fine Clothing,211.47,Minke,Mies,Security,Perimeter Control
+133,1/12/2014,259.17,Albert's Fine Clothing,195.81,Adra,Nubarron,Engineering,Geologist
+147,1/13/2014,337.48,Albert's Fine Clothing,288.0,Ingrid,Barranco,Executive,SVP/CFO
+171,1/14/2014,279.49,Albert's Fine Clothing,228.72,Felix,Balas,Engineering,Engineer
+193,1/15/2014,228.15,Albert's Fine Clothing,228.15,Varro,Awelon,Facilities,Janitor
+219,1/16/2014,375.09,Albert's Fine Clothing,283.38,Varro,Awelon,Facilities,Janitor
+242,1/17/2014,39.41,Albert's Fine Clothing,39.41,Gustav,Cazar,Engineering,Hydraulic Technician
+263,1/18/2014,451.67,Albert's Fine Clothing,226.49,Orhan,Strum,Executive,SVP/COO
+279,1/19/2014,528.95,Albert's Fine Clothing,274.66,Adra,Nubarron,Engineering,Geologist

@@ -1,15 +1,11 @@
-,date,revenue
-0,1/6/2014,11.51
-1,1/7/2014,16.63
-2,1/8/2014,13.13
-3,1/9/2014,5.01
-4,1/10/2014,0
-5,1/11/2014,0
-6,1/12/2014,0
-7,1/13/2014,4.09
-8,1/14/2014,3.63
-9,1/15/2014,18.17
-10,1/16/2014,10.48
-11,1/17/2014,19.16
-12,1/18/2014,0
-13,1/19/2014,0
+,date,revenue,location,price,FirstName,LastName,CurrentEmploymentType,CurrentEmploymentTitle
+6,1/6/2014,28.98,Coffee Cameleon,11.86,Adra,Nubarron,Engineering,Geologist
+31,1/7/2014,40.75,Coffee Cameleon,12.44,Carla,Forluniau,Administration,Assistant to IT Group Manager
+54,1/8/2014,50.73,Coffee Cameleon,16.17,Carla,Forluniau,Administration,Assistant to IT Group Manager
+79,1/9/2014,41.0,Coffee Cameleon,19.99,Bertrand,Ovan,Facilities,Facilities Group Manager
+104,1/10/2014,29.74,Coffee Cameleon,11.54,Bertrand,Ovan,Facilities,Facilities Group Manager
+152,1/13/2014,60.06,Coffee Cameleon,19.93,Bertrand,Ovan,Facilities,Facilities Group Manager
+177,1/14/2014,44.94,Coffee Cameleon,15.63,Linnea,Bergen,Information Technology,IT Group Manager
+198,1/15/2014,56.2,Coffee Cameleon,19.93,Adra,Nubarron,Engineering,Geologist
+224,1/16/2014,15.53,Coffee Cameleon,7.19,Bertrand,Ovan,Facilities,Facilities Group Manager
+247,1/17/2014,48.3,Coffee Cameleon,14.57,Adra,Nubarron,Engineering,Geologist

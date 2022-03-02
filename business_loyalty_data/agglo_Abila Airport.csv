@@ -1,15 +1,12 @@
-,date,revenue
-0,1/6/2014,160.46
-1,1/7/2014,124.6
-2,1/8/2014,148.69
-3,1/9/2014,129.66
-4,1/10/2014,171.44
-5,1/11/2014,189.56
-6,1/12/2014,11.2
-7,1/13/2014,265.36
-8,1/14/2014,89.87
-9,1/15/2014,148.49
-10,1/16/2014,128.82999999999998
-11,1/17/2014,112.07
-12,1/18/2014,241.51
-13,1/19/2014,47.8
+,date,revenue,location,price,FirstName,LastName,CurrentEmploymentType,CurrentEmploymentTitle
+0,1/6/2014,5929.61,Abila Airport,4540.08,Albina,Hafon,Facilities,Truck Driver
+23,1/7/2014,9018.51,Abila Airport,3840.37,Benito,Hawelon,Facilities,Truck Driver
+46,1/8/2014,5492.3,Abila Airport,2769.12,Henk,Mies,Facilities,Truck Driver
+71,1/9/2014,11872.17,Abila Airport,4792.5,Dylan,Scozzese,Facilities,Truck Driver
+,1/10/2014,0,,,,,,
+,1/11/2014,0,,,,,,
+,1/12/2014,0,,,,,,
+145,1/13/2014,10262.58,Abila Airport,4417.03,Henk,Mies,Facilities,Truck Driver
+168,1/14/2014,10835.57,Abila Airport,4898.39,Henk,Mies,Facilities,Truck Driver
+191,1/15/2014,4028.28,Abila Airport,3152.41,Henk,Mies,Facilities,Truck Driver
+216,1/16/2014,11765.78,Abila Airport,3917.3,Henk,Mies,Facilities,Truck Driver

@@ -1,15 +1,11 @@
-,date,revenue
-0,1/6/2014,87.18
-1,1/7/2014,92.52999999999999
-2,1/8/2014,55.96
-3,1/9/2014,142.64000000000001
-4,1/10/2014,103.55
-5,1/11/2014,0
-6,1/12/2014,0
-7,1/13/2014,84.25999999999999
-8,1/14/2014,92.02
-9,1/15/2014,80.72
-10,1/16/2014,127.53
-11,1/17/2014,95.27000000000001
-12,1/18/2014,0
-13,1/19/2014,0
+,date,revenue,location,price,FirstName,LastName,CurrentEmploymentType,CurrentEmploymentTitle
+11,1/6/2014,87.18,Hallowed Grounds,16.72,Birgitta,Frente,Engineering,Geologist
+36,1/7/2014,92.53,Hallowed Grounds,18.97,Hideki,Cocinaro,Security,Site Control
+61,1/8/2014,55.96,Hallowed Grounds,19.92,Nils,Calixto,Information Technology,IT Technician
+85,1/9/2014,142.64,Hallowed Grounds,18.48,Birgitta,Frente,Engineering,Geologist
+109,1/10/2014,103.55,Hallowed Grounds,17.63,Rachel,Pantanal,Administration,Assistant to CIO
+157,1/13/2014,84.25999999999998,Hallowed Grounds,19.18,Hideki,Cocinaro,Security,Site Control
+182,1/14/2014,92.02,Hallowed Grounds,19.99,Lidelse,Dedos,Engineering,Engineering Group Manager
+204,1/15/2014,80.72,Hallowed Grounds,18.69,Anda,Ribera,Administration,Assistant to CFO
+229,1/16/2014,127.53,Hallowed Grounds,18.23,Anda,Ribera,Administration,Assistant to CFO
+253,1/17/2014,95.27,Hallowed Grounds,18.6,Lidelse,Dedos,Engineering,Engineering Group Manager

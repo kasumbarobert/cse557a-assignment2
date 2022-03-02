@@ -1,15 +1,10 @@
-,date,revenue
-0,1/6/2014,398.65999999999997
-1,1/7/2014,307.27
-2,1/8/2014,136.01
-3,1/9/2014,454.5
-4,1/10/2014,126.13
-5,1/11/2014,316.8
-6,1/12/2014,259.17
-7,1/13/2014,337.48
-8,1/14/2014,279.49
-9,1/15/2014,228.15
-10,1/16/2014,375.09
-11,1/17/2014,39.41
-12,1/18/2014,451.67
-13,1/19/2014,528.95
+,date,revenue,location,price,FirstName,LastName,CurrentEmploymentType,CurrentEmploymentTitle
+7,1/6/2014,11.51,Coffee Shack,11.51,Varro,Awelon,Facilities,Janitor
+32,1/7/2014,16.63,Coffee Shack,16.63,Varro,Awelon,Facilities,Janitor
+55,1/8/2014,13.13,Coffee Shack,13.13,Varro,Awelon,Facilities,Janitor
+80,1/9/2014,5.01,Coffee Shack,5.01,Varro,Awelon,Facilities,Janitor
+153,1/13/2014,4.09,Coffee Shack,4.09,Varro,Awelon,Facilities,Janitor
+178,1/14/2014,3.63,Coffee Shack,3.63,Varro,Awelon,Facilities,Janitor
+199,1/15/2014,18.17,Coffee Shack,18.17,Varro,Awelon,Facilities,Janitor
+225,1/16/2014,10.48,Coffee Shack,10.48,Varro,Awelon,Facilities,Janitor
+248,1/17/2014,19.16,Coffee Shack,19.16,Varro,Awelon,Facilities,Janitor

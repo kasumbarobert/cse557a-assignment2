@@ -1,15 +1,11 @@
-,date,revenue
-0,1/6/2014,183.02
-1,1/7/2014,198.59
-2,1/8/2014,190.11999999999998
-3,1/9/2014,81.38
-4,1/10/2014,172.52
-5,1/11/2014,69.36
-6,1/12/2014,406.81000000000006
-7,1/13/2014,143.5
-8,1/14/2014,151.74
-9,1/15/2014,251.83999999999997
-10,1/16/2014,147.10999999999999
-11,1/17/2014,137.12
-12,1/18/2014,181.01999999999998
-13,1/19/2014,136.95000000000002
+,date,revenue,location,price,FirstName,LastName,CurrentEmploymentType,CurrentEmploymentTitle
+21,1/6/2014,2144.62,Stewart and Sons Fabrication,2144.62,Cecilia,Morluniau,Facilities,Truck Driver
+45,1/7/2014,2984.23,Stewart and Sons Fabrication,1783.33,Cecilia,Morluniau,Facilities,Truck Driver
+70,1/8/2014,3412.03,Stewart and Sons Fabrication,1738.26,Adan,Morlun,Facilities,Truck Driver
+96,1/9/2014,5478.25,Stewart and Sons Fabrication,3544.0,Cecilia,Morluniau,Facilities,Truck Driver
+118,1/10/2014,8269.59,Stewart and Sons Fabrication,4195.49,Claudio,Hawelon,Facilities,Truck Driver
+167,1/13/2014,4071.95,Stewart and Sons Fabrication,4071.95,Cecilia,Morluniau,Facilities,Truck Driver
+190,1/14/2014,818.71,Stewart and Sons Fabrication,540.19,Benito,Hawelon,Facilities,Truck Driver
+215,1/15/2014,4485.38,Stewart and Sons Fabrication,4485.38,Adan,Morlun,Facilities,Truck Driver
+240,1/16/2014,5403.6100000000015,Stewart and Sons Fabrication,4543.31,Cecilia,Morluniau,Facilities,Truck Driver
+260,1/17/2014,1753.17,Stewart and Sons Fabrication,1753.17,Cecilia,Morluniau,Facilities,Truck Driver

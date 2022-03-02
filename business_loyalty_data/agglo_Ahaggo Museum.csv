@@ -1,15 +1,5 @@
-,date,revenue
-0,1/6/2014,0
-1,1/7/2014,0
-2,1/8/2014,0
-3,1/9/2014,0
-4,1/10/2014,0
-5,1/11/2014,0
-6,1/12/2014,488.56000000000006
-7,1/13/2014,0
-8,1/14/2014,0
-9,1/15/2014,0
-10,1/16/2014,0
-11,1/17/2014,0
-12,1/18/2014,0
-13,1/19/2014,744.94
+,date,revenue,location,price,FirstName,LastName,CurrentEmploymentType,CurrentEmploymentTitle
+120,1/11/2014,121.46,Ahaggo Museum,89.32,Edvard,Vann,Security,Perimeter Control
+132,1/12/2014,120.2,Ahaggo Museum,120.2,Felix,Resumir,Security,Security Group Manager
+262,1/18/2014,175.75,Ahaggo Museum,120.2,Sven,Flecha,Information Technology,IT Technician
+278,1/19/2014,26.91,Ahaggo Museum,26.91,Elsa,Orilla,Engineering,Drill Technician

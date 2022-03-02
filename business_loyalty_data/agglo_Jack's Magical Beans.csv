@@ -1,15 +1,11 @@
-,date,revenue
-0,1/6/2014,26.96
-1,1/7/2014,35.739999999999995
-2,1/8/2014,24.05
-3,1/9/2014,30.82
-4,1/10/2014,33.89
-5,1/11/2014,0
-6,1/12/2014,0
-7,1/13/2014,45.339999999999996
-8,1/14/2014,49.53
-9,1/15/2014,30.99
-10,1/16/2014,12.92
-11,1/17/2014,22.85
-12,1/18/2014,0
-13,1/19/2014,0
+,date,revenue,location,price,FirstName,LastName,CurrentEmploymentType,CurrentEmploymentTitle
+13,1/6/2014,55.56,Jack's Magical Beans,18.59,Elsa,Orilla,Engineering,Drill Technician
+38,1/7/2014,51.90000000000001,Jack's Magical Beans,19.61,Orhan,Strum,Executive,SVP/COO
+63,1/8/2014,46.36,Jack's Magical Beans,18.78,Elsa,Orilla,Engineering,Drill Technician
+87,1/9/2014,33.54,Jack's Magical Beans,17.43,Willem,Vasco-Pais,Executive,Environmental Safety Advisor
+111,1/10/2014,37.44,Jack's Magical Beans,16.29,Elsa,Orilla,Engineering,Drill Technician
+159,1/13/2014,50.69,Jack's Magical Beans,18.31,Isak,Baza,Information Technology,IT Technician
+184,1/14/2014,50.46,Jack's Magical Beans,18.08,Willem,Vasco-Pais,Executive,Environmental Safety Advisor
+206,1/15/2014,28.9,Jack's Magical Beans,19.54,Willem,Vasco-Pais,Executive,Environmental Safety Advisor
+231,1/16/2014,43.49,Jack's Magical Beans,14.86,Elsa,Orilla,Engineering,Drill Technician
+255,1/17/2014,26.68,Jack's Magical Beans,19.11,Elsa,Orilla,Engineering,Drill Technician

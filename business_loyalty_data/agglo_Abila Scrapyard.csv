@@ -1,15 +1,12 @@
-,date,revenue
-0,1/6/2014,0
-1,1/7/2014,2149.28
-2,1/8/2014,0
-3,1/9/2014,1158.36
-4,1/10/2014,0
-5,1/11/2014,0
-6,1/12/2014,0
-7,1/13/2014,0
-8,1/14/2014,4277.4
-9,1/15/2014,0
-10,1/16/2014,1897.05
-11,1/17/2014,0
-12,1/18/2014,0
-13,1/19/2014,0
+,date,revenue,location,price,FirstName,LastName,CurrentEmploymentType,CurrentEmploymentTitle,
+,1/6/2014,0,,,,,,,
+24,1/7/2014,2149.28,Abila Scrapyard,2149.28,Dylan,Scozzese,Facilities,Truck Driver,
+,1/8/2014,0,,,,,,,
+72,1/9/2014,1158.36,Abila Scrapyard,1158.36,Dylan,Scozzese,Facilities,Truck Driver,
+,1/10/2014,,,,,,,,
+,1/11/2014,,,,,,,,
+,1/12/2014,,,,,,,,
+,1/13/2014,,,,,,,,
+169,1/14/2014,4277.4,Abila Scrapyard,4277.4,Dylan,Scozzese,Facilities,Truck Driver,
+,1/15/2014,,,,,,,,
+217,1/16/2014,1897.05,Abila Scrapyard,1897.05,Dylan,Scozzese,Facilities,Truck Driver,

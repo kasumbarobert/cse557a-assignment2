@@ -1,15 +1,15 @@
-,date,revenue
-0,1/6/2014,761.64
-1,1/7/2014,3799.6
-2,1/8/2014,12554.91
-3,1/9/2014,3706.4700000000003
-4,1/10/2014,3815.55
-5,1/11/2014,0
-6,1/12/2014,0
-7,1/13/2014,204.58
-8,1/14/2014,7267.4400000000005
-9,1/15/2014,4396.22
-10,1/16/2014,8284.39
-11,1/17/2014,0
-12,1/18/2014,0
-13,1/19/2014,0
+,date,revenue,location,price,FirstName,LastName,CurrentEmploymentType,CurrentEmploymentTitle
+8,1/6/2014,1072.19,Frydos Autosupply n' More,274.98,Marin,Onda,Engineering,Drill Site Manager
+33,1/7/2014,272.73,Frydos Autosupply n' More,272.73,Felix,Resumir,Security,Security Group Manager
+57,1/8/2014,665.52,Frydos Autosupply n' More,268.89,Anda,Ribera,Administration,Assistant to CFO
+81,1/9/2014,475.42,Frydos Autosupply n' More,276.75,Loreto,Bodrogi,Security,Site Control
+105,1/10/2014,260.73,Frydos Autosupply n' More,217.08,Sven,Flecha,Information Technology,IT Technician
+122,1/11/2014,604.96,Frydos Autosupply n' More,261.0,Felix,Resumir,Security,Security Group Manager
+135,1/12/2014,250.89,Frydos Autosupply n' More,161.96,Dante,Coginian,Facilities,Lead Janitor
+154,1/13/2014,542.79,Frydos Autosupply n' More,202.05,Carla,Forluniau,Administration,Assistant to IT Group Manager
+179,1/14/2014,238.67,Frydos Autosupply n' More,146.74,Felix,Resumir,Security,Security Group Manager
+200,1/15/2014,531.0600000000002,Frydos Autosupply n' More,276.88,Mat,Bramar,Administration,Assistant to CEO
+226,1/16/2014,183.38,Frydos Autosupply n' More,130.01,Mat,Bramar,Administration,Assistant to CEO
+249,1/17/2014,191.81,Frydos Autosupply n' More,124.52,Mat,Bramar,Administration,Assistant to CEO
+266,1/18/2014,843.6999999999998,Frydos Autosupply n' More,281.54,Lidelse,Dedos,Engineering,Engineering Group Manager
+281,1/19/2014,363.89,Frydos Autosupply n' More,209.76,Edvard,Vann,Security,Perimeter Control

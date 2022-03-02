@@ -1,15 +1,15 @@
-,date,revenue
-0,1/6/2014,242.21
-1,1/7/2014,3920.82
-2,1/8/2014,3615.61
-3,1/9/2014,423.14
-4,1/10/2014,0
-5,1/11/2014,0
-6,1/12/2014,0
-7,1/13/2014,2852.74
-8,1/14/2014,0
-9,1/15/2014,2564.0
-10,1/16/2014,0
-11,1/17/2014,0
-12,1/18/2014,0
-13,1/19/2014,0
+,date,revenue,location,price,FirstName,LastName,CurrentEmploymentType,CurrentEmploymentTitle
+19,1/6/2014,183.02,Ouzeri Elian,38.9,Isande,Borrasca,Engineering,Drill Technician
+44,1/7/2014,198.59,Ouzeri Elian,29.1,Adra,Nubarron,Engineering,Geologist
+69,1/8/2014,190.12,Ouzeri Elian,62.2,Elsa,Orilla,Engineering,Drill Technician
+94,1/9/2014,81.38,Ouzeri Elian,32.89,Hideki,Cocinaro,Security,Site Control
+116,1/10/2014,172.52,Ouzeri Elian,35.24,Loreto,Bodrogi,Security,Site Control
+129,1/11/2014,69.36,Ouzeri Elian,69.36,Isak,Baza,Information Technology,IT Technician
+143,1/12/2014,406.81000000000006,Ouzeri Elian,117.22,Orhan,Strum,Executive,SVP/COO
+165,1/13/2014,143.5,Ouzeri Elian,35.03,Edvard,Vann,Security,Perimeter Control
+188,1/14/2014,151.74,Ouzeri Elian,33.67,Rachel,Pantanal,Administration,Assistant to CIO
+213,1/15/2014,251.84,Ouzeri Elian,36.47,Gustav,Cazar,Engineering,Hydraulic Technician
+237,1/16/2014,147.11,Ouzeri Elian,31.21,Rachel,Pantanal,Administration,Assistant to CIO
+258,1/17/2014,137.12,Ouzeri Elian,38.6,Isak,Baza,Information Technology,IT Technician
+274,1/18/2014,181.02,Ouzeri Elian,57.63,Isak,Baza,Information Technology,IT Technician
+287,1/19/2014,136.95000000000002,Ouzeri Elian,67.98,Isak,Baza,Information Technology,IT Technician

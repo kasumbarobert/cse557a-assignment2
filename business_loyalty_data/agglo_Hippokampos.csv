@@ -1,15 +1,15 @@
-,date,revenue
-0,1/6/2014,28.98
-1,1/7/2014,40.75
-2,1/8/2014,50.73
-3,1/9/2014,41.0
-4,1/10/2014,29.74
-5,1/11/2014,0
-6,1/12/2014,0
-7,1/13/2014,60.059999999999995
-8,1/14/2014,44.94
-9,1/15/2014,56.199999999999996
-10,1/16/2014,15.530000000000001
-11,1/17/2014,48.3
-12,1/18/2014,0
-13,1/19/2014,0
+,date,revenue,location,price,FirstName,LastName,CurrentEmploymentType,CurrentEmploymentTitle
+12,1/6/2014,332.86,Hippokampos,38.25,Dante,Coginian,Facilities,Lead Janitor
+37,1/7/2014,224.40000000000003,Hippokampos,37.88,Willem,Vasco-Pais,Executive,Environmental Safety Advisor
+62,1/8/2014,308.67999999999995,Hippokampos,39.8,Lucas,Alcazar,Information Technology,IT Helpdesk
+86,1/9/2014,214.6,Hippokampos,27.93,Brand,Tempestad,Engineering,Drill Technician
+110,1/10/2014,257.54999999999995,Hippokampos,39.97,Willem,Vasco-Pais,Executive,Environmental Safety Advisor
+126,1/11/2014,499.14,Hippokampos,70.23,Lars,Azada,Engineering,Engineer
+139,1/12/2014,487.8,Hippokampos,78.21,Felix,Balas,Engineering,Engineer
+158,1/13/2014,385.57,Hippokampos,39.9,Isia,Vann,Security,Perimeter Control
+183,1/14/2014,213.39,Hippokampos,39.64,Lars,Azada,Engineering,Engineer
+205,1/15/2014,301.97,Hippokampos,38.89,Brand,Tempestad,Engineering,Drill Technician
+230,1/16/2014,282.45,Hippokampos,36.17,Isak,Baza,Information Technology,IT Technician
+254,1/17/2014,289.48,Hippokampos,52.31,Elsa,Orilla,Engineering,Drill Technician
+270,1/18/2014,340.48,Hippokampos,72.5,Lars,Azada,Engineering,Engineer
+285,1/19/2014,394.81,Hippokampos,101.25,Felix,Balas,Engineering,Engineer

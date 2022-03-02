@@ -1,15 +1,15 @@
-,date,revenue
-0,1/6/2014,2859.51
-1,1/7/2014,3207.31
-2,1/8/2014,3136.01
-3,1/9/2014,1527.14
-4,1/10/2014,0
-5,1/11/2014,0
-6,1/12/2014,0
-7,1/13/2014,689.85
-8,1/14/2014,0
-9,1/15/2014,4788.22
-10,1/16/2014,0
-11,1/17/2014,0
-12,1/18/2014,0
-13,1/19/2014,0
+,date,revenue,location,price,FirstName,LastName,CurrentEmploymentType,CurrentEmploymentTitle
+10,1/6/2014,249.92,Guy's Gyros,39.29,Sven,Flecha,Information Technology,IT Technician
+35,1/7/2014,259.77,Guy's Gyros,38.56,Isia,Vann,Security,Perimeter Control
+60,1/8/2014,186.52,Guy's Gyros,30.48,Minke,Mies,Security,Perimeter Control
+84,1/9/2014,276.88,Guy's Gyros,35.05,Sven,Flecha,Information Technology,IT Technician
+108,1/10/2014,329.86,Guy's Gyros,38.15,Linda,Lagos,Administration,Assistant to COO
+125,1/11/2014,141.87,Guy's Gyros,55.69,Stenig,Fusil,Security,Building Control
+138,1/12/2014,184.72,Guy's Gyros,42.78,Varja,Lagos,Security,Badging Office
+156,1/13/2014,417.7,Guy's Gyros,38.07,Varro,Awelon,Facilities,Janitor
+181,1/14/2014,262.36,Guy's Gyros,50.4,Elsa,Orilla,Engineering,Drill Technician
+203,1/15/2014,321.28,Guy's Gyros,36.35,Stenig,Fusil,Security,Building Control
+228,1/16/2014,327.54,Guy's Gyros,37.8,Edvard,Vann,Security,Perimeter Control
+252,1/17/2014,277.3,Guy's Gyros,39.14,Loreto,Bodrogi,Security,Site Control
+269,1/18/2014,174.52,Guy's Gyros,47.89,Birgitta,Frente,Engineering,Geologist
+284,1/19/2014,397.83,Guy's Gyros,65.21,Sven,Flecha,Information Technology,IT Technician

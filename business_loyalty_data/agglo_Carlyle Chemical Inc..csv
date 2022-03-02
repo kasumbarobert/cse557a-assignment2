@@ -1,15 +1,10 @@
-,date,revenue
-0,1/6/2014,1072.19
-1,1/7/2014,272.73
-2,1/8/2014,665.52
-3,1/9/2014,475.41999999999996
-4,1/10/2014,260.73
-5,1/11/2014,604.96
-6,1/12/2014,250.89000000000001
-7,1/13/2014,542.79
-8,1/14/2014,238.67000000000002
-9,1/15/2014,531.0600000000001
-10,1/16/2014,183.38
-11,1/17/2014,191.81
-12,1/18/2014,843.6999999999999
-13,1/19/2014,363.89
+,date,revenue,location,price,FirstName,LastName,CurrentEmploymentType,CurrentEmploymentTitle
+5,1/6/2014,3959.66,Carlyle Chemical Inc.,3959.66,Albina,Hafon,Facilities,Truck Driver
+30,1/7/2014,3827.2,Carlyle Chemical Inc.,3827.2,Valeria,Morlun,Facilities,Truck Driver
+52,1/8/2014,9885.4,Carlyle Chemical Inc.,4983.52,Irene,Nant,Facilities,Truck Driver
+78,1/9/2014,3820.92,Carlyle Chemical Inc.,2176.2,Valeria,Morlun,Facilities,Truck Driver
+102,1/10/2014,3717.17,Carlyle Chemical Inc.,3489.36,Irene,Nant,Facilities,Truck Driver
+151,1/13/2014,1718.96,Carlyle Chemical Inc.,1718.96,Albina,Hafon,Facilities,Truck Driver
+175,1/14/2014,7896.44,Carlyle Chemical Inc.,3630.57,Valeria,Morlun,Facilities,Truck Driver
+197,1/15/2014,6112.85,Carlyle Chemical Inc.,3608.08,Valeria,Morlun,Facilities,Truck Driver
+223,1/16/2014,2234.17,Carlyle Chemical Inc.,1814.24,Valeria,Morlun,Facilities,Truck Driver

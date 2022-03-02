@@ -1,15 +1,10 @@
-,date,revenue
-0,1/6/2014,175.95
-1,1/7/2014,131.92
-2,1/8/2014,179.9
-3,1/9/2014,125.5
-4,1/10/2014,132.06
-5,1/11/2014,0
-6,1/12/2014,0
-7,1/13/2014,166.62
-8,1/14/2014,157.36
-9,1/15/2014,151.98
-10,1/16/2014,125.85
-11,1/17/2014,172.42000000000004
-12,1/18/2014,0
-13,1/19/2014,0
+,date,revenue,location,price,FirstName,LastName,CurrentEmploymentType,CurrentEmploymentTitle
+29,1/7/2014,131.92,Brew've Been Served,18.53,Brand,Tempestad,Engineering,Drill Technician
+51,1/8/2014,179.9,Brew've Been Served,19.17,Brand,Tempestad,Engineering,Drill Technician
+77,1/9/2014,125.5,Brew've Been Served,19.47,Felix,Resumir,Security,Security Group Manager
+101,1/10/2014,132.06,Brew've Been Served,17.25,Edvard,Vann,Security,Perimeter Control
+150,1/13/2014,166.62,Brew've Been Served,19.89,Dante,Coginian,Facilities,Lead Janitor
+174,1/14/2014,157.36,Brew've Been Served,16.53,Hennie,Osvaldo,Security,Perimeter Control
+196,1/15/2014,151.98,Brew've Been Served,19.87,Brand,Tempestad,Engineering,Drill Technician
+222,1/16/2014,125.85,Brew've Been Served,19.9,Varja,Lagos,Security,Badging Office
+245,1/17/2014,172.42000000000004,Brew've Been Served,19.39,Edvard,Vann,Security,Perimeter Control
