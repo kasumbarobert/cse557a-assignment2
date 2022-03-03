@@ -1,5 +1,7 @@
 //This Network graph based on https://bl.ocks.org/martinjc/e4c013dab1fabb2e02e2ee3bc6e1b49d
 
+// the network visualizes employees who visited the same place in the two. 
+// a link only exists between two employees if they went to the same place with in a span of 10 minutes
 
 
 var nodesLinked = {};
@@ -17,7 +19,8 @@ var linkStrengthScale = d3.scaleLinear()
 .range([0, 0.5]);
 var drag
 
-    d3.json("data/network.json").then(function (network){
+//load the employee 
+d3.json("data/network.json").then(function (network){
                 var svg = d3.select("#friends-network").append("svg")
                 .attr("height",svgNetHeightLO )
                 .attr("width",svgNetWidthLO )
@@ -181,6 +184,7 @@ var drag
     function hasLink(a, b) {
         return nodesLinked[a.id + "_" + b.id] || nodesLinked[b.id + "_" + a.id] || a.id == b.id;
     }
+
     function mouseOver(opacity) {
         return function(d) {
             node.style("stroke-opacity", function(o) {
