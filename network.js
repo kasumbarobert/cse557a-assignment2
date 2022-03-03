@@ -1,8 +1,11 @@
+//This Network graph based on https://bl.ocks.org/martinjc/e4c013dab1fabb2e02e2ee3bc6e1b49d
+
+
 
 var nodesLinked = {};
-const svgNetWidthLO = 820;
-const svgNetHeightLO = 820;
-const marginsL1 = {top: 20, right: 50, bottom: 150, left: 50};
+const svgNetWidthLO = 900;
+const svgNetHeightLO = 800;
+const marginsL1 = {top: 10, right: 10, bottom: 10, left: 10};
 var nodes, node;
 var links, link;
 var widthL1 = svgNetWidthLO - marginsL1.left - marginsL1.right;
@@ -12,11 +15,12 @@ var linkWidthScale = d3.scaleLinear()
 .range([1, 10]);
 var linkStrengthScale = d3.scaleLinear()
 .range([0, 0.5]);
+var drag
 
     d3.json("data/network.json").then(function (network){
                 var svg = d3.select("#friends-network").append("svg")
-                .attr("height",heightL1 )
-                .attr("width",widthL1 )
+                .attr("height",svgNetHeightLO )
+                .attr("width",svgNetWidthLO )
                 .append("g")
                 .attr("id","friends-network-svg-g")
                 .attr('transform', 'translate(' + marginsL1.top + ',' + marginsL1.left + ')');
@@ -61,7 +65,7 @@ var linkStrengthScale = d3.scaleLinear()
                     .attr("class", "node")
                     .attr("r", 8)
                     .attr("fill", function(d) {
-                        return map_colors[parseInt(Math.random()*40)];
+                        return d.color;
                     })
                     .on("mouseover", mouseOver(0.1))
                     .on("mouseout", mouseOut);
@@ -80,10 +84,10 @@ var linkStrengthScale = d3.scaleLinear()
                     .style("stroke", "black")
                     .style("stroke-width", 0.5)
                     .style("fill", function(d) {
-                        return map_colors[parseInt(Math.random()*40)];
+                        return d.color;
                     });
                 var simulation = d3.forceSimulation()
-                    .force("charge", d3.forceManyBody().strength(-20))
+                    .force("charge", d3.forceManyBody().strength(-10))
                     .force('center', d3.forceCenter(widthL1 / 2, heightL1 / 2))
                     .force('link', d3.forceLink()
                     .id(function(d) {
@@ -95,21 +99,49 @@ var linkStrengthScale = d3.scaleLinear()
                     );
                     simulation.nodes(nodes)
                     .on('tick', ticked)
+
                     simulation.force("link").links(links);
 
                 links.forEach(function(d) {
                     nodesLinked[d.source.id + "_" + d.target.id] = 1;
                 });
-        
+
+                drag = d3.drag().on('drag', handleDrag);
+                node.call(drag)
             
             })
+
+    function handleDrag(d){
+        console.log("Drag called")
+        if (d.x < 0) {
+            d.subject.x = 0
+        } else if (d.x > widthL1) {
+            d.subject.x = widthL1
+        } else{
+            d.subject.x = d.x
+        };;
+        
+        if (d.y < 0) {
+            d.subject.y = 0
+        } else if (d.y > heightL1) {
+            d.subject.y = heightL1
+        }
+        else{
+            d.subject.y = d.y
+        };;
+        
+
+        d3.select(this).call(drag)
+        //console.log(d.subject.y, d.y,heightL1)
+    
+    }
            
     function ticked(){
             link.attr("d", rePositionLink);
             node.attr("transform", rePositionNode);
     }
     function rePositionLink(d) {
-            var offset = 30;
+            var offset = 5;
             var midpoint_x = (d.source.x + d.target.x) / 2;
             var midpoint_y = (d.source.y + d.target.y) / 2;
         
@@ -126,29 +158,33 @@ var linkStrengthScale = d3.scaleLinear()
                 " " + d.target.x + "," + d.target.y;
 }
     function rePositionNode(d) {
-            if (d.x < 0) {
-                d.x = 0
+            pos_x =d.x
+            pos_y = d.y
+            if (pos_x < 0) {
+                pos_x = 0
+            }else if (pos_x > widthL1) {
+                pos_x = widthL1
+            }else{
+                pos_x =d.x
+            };;
+            if (pos_y < 0) {
+                pos_y = 0
+            }else if (pos_y > heightL1) {
+                pos_y = heightL1
+            }
+            else{
+                pos_y =d.y
             };
-            if (d.y < 0) {
-                d.y = 0
-            };
-            if (d.x > widthL1) {
-                d.x = widthL1
-            };
-            if (d.y > heightL1) {
-                d.y = heightL1
-            };
-            return "translate(" + d.x + "," + d.y + ")";
+
+            return "translate(" + pos_x + "," + pos_y + ")";
         }
     function hasLink(a, b) {
-        console.log( a.id + "_" + b.id, nodesLinked[b.id + "_" + a.id])
         return nodesLinked[a.id + "_" + b.id] || nodesLinked[b.id + "_" + a.id] || a.id == b.id;
     }
     function mouseOver(opacity) {
         return function(d) {
             node.style("stroke-opacity", function(o) {
                 thisOpacity = hasLink(d.srcElement.__data__, o) ? 1 : opacity;
-
                 return thisOpacity;
             });
             node.style("fill-opacity", function(o) {
@@ -170,3 +206,7 @@ var linkStrengthScale = d3.scaleLinear()
         link.style("stroke-opacity", 1);
         link.style("stroke", "#ddd");
     }   
+
+    function dragStart(d) {
+        d.fixed = true;
+      }
