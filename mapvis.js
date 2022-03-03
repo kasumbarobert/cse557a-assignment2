@@ -17,10 +17,7 @@ map = L.map('map', {
 center: [36.068421504029343 , 24.86214637756348],
 zoom: 13
 })
-// .addLayer(L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{
-// maxZoom: 20,
-// subdomains:['mt0','mt1','mt2','mt3']
-// }));
+
 all_employees_ids_layer_group = L.layerGroup()
 single_employee_layer_group = L.layerGroup()
 department_employees_layer = L.layerGroup()
@@ -40,13 +37,16 @@ options.text(function(d) {
 .attr("value", function(d) {
     return d.CarID;
 });
+d3.select("#employees_list").insert("option",":first-child")
+.text("All employees").attr("value","all").attr("selected","selected")
+
 d3.select("#departments_list").selectAll("option")
 .data([...new Set(d3.map(employees, function(emp){return emp.CurrentEmploymentType;}))])
 .enter()
 .append("option")
 .text(function(d){return d;})
 .attr("value",function(d){return d;});
-
+d3.select("#departments_list").insert("option",":first-child").text("Choose departments").attr("selected","selected")
 updateRoutes()
 }).catch(function(err) {
         console.log(err)
@@ -98,7 +98,6 @@ updateRoutes()
 });
 
 function updateRoutes(){
-    console.log("Called")
     carId = document.getElementById('employees_list').value
     date = document.getElementById('date').value
     start_time = date+" "+document.getElementById('start_time').value
@@ -107,13 +106,13 @@ function updateRoutes(){
 
     if (carId =="all"){
         displayALlRoutes(start_time, end_time)
-        //single_employee_layer_group.clearLayers()
-        //department_employees_layer.clearLayers()
+        single_employee_layer_group.clearLayers()
+        department_employees_layer.clearLayers()
     }
     else{
         displayALlRoutes(start_time, end_time)
-        //department_employees_layer.clearLayers()
-        //single_employee_layer_group.clearLayers()
+        department_employees_layer.clearLayers()
+        single_employee_layer_group.clearLayers()
         loc_start_time = new Date(start_time)
         loc_end_time = new Date(end_time)
         console.log(location_by_minute)
@@ -152,8 +151,8 @@ function updateRoutes(){
 
 function displayRoutesFromDept(){
         department = document.getElementById('departments_list').value
-        //department_employees_layer.clearLayers()
-        //single_employee_layer_group.clearLayers()
+        department_employees_layer.clearLayers()
+        single_employee_layer_group.clearLayers()
         date = document.getElementById('date').value
         start_time = date+" "+document.getElementById('start_time').value
         end_time = date+" "+document.getElementById('end_time').value
@@ -186,7 +185,7 @@ function displayRoutesFromDept(){
         department_employees_layer.addTo(map)
 }
 function displayALlRoutes(start_time, end_time){
-        //all_employees_ids_layer_group.clearLayers()
+        all_employees_ids_layer_group.clearLayers()
         loc_start_time = new Date(start_time)
         loc_end_time = new Date(end_time)
         for (let i in all_employees){
