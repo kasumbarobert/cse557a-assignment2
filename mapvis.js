@@ -15,7 +15,7 @@ d3.csv("data/locations_by_minute.csv").then(function (locationData){
 
 map = L.map('map', {
 center: [36.068421504029343 , 24.86214637756348],
-zoom: 13
+zoom: 13.5
 })
 
 all_employees_ids_layer_group = L.layerGroup()
@@ -124,17 +124,17 @@ function updateRoutes(){
         var latlngs = carLocations.map(function(loc){return [loc.lat,loc.long]}); 
         var path = L.polyline(latlngs, {"delay":400,"weight":3,"color":map_colors[carId],"paused":true,"reverse":true, "id":carId})
         i = carId
-        path.bindPopup("<span style='color:"+map_colors[carId]+"'>"+all_employees[i].FirstName +" "+all_employees[i].LastName+"</span>",{
+        path.bindPopup("<span style='color:"+map_colors[carId]+"'>"+all_employees[i-1].FirstName +" "+all_employees[i-1].LastName+"</span>",{
                 direction: 'auto',
                 color:map_colors[carId]
         })
         path.on("mouseover", function(e){
             this.setStyle({ "weight":5})
-            map.openPopup(this._popup)
+            //map.openPopup(this._popup)
         })
         path.on("mouseout", function(e){
             this.setStyle({ "weight":3})
-            map.closePopup()
+            //map.closePopup()
         })
         path.on("clik", function(e){
             console.log(d3.select("#employees_list").node())
