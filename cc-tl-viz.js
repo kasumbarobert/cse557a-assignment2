@@ -1,6 +1,7 @@
 const svgWidthCC = 800;
 const svgHeightCC = 800;
 const marginsCC = {top: 20, right: 50, bottom: 150, left: 50};
+const margins = {top: 20, right: 50, bottom: 150, left: 50};
 
 const ccSVG = d3.select("#cc-time-graph-container").classed("content", true);
 const ccSVGBounds = ccSVG.node().getBoundingClientRect();
