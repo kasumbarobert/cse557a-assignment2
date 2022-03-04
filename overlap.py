@@ -1,4 +1,4 @@
- 
+
 
 import csv
 import pandas as pd
@@ -64,10 +64,10 @@ for i in range(len(rows)):
 
         if i+nextone >= len(rows):
             break
-        
+
         nextrow = rows[i+nextone]
-        
-        
+
+
         nexttime = datetime.strptime(row[0].strip(),'%m/%d/%Y %H:%M')
         difference = nexttime - timestamp
         minutes_difference = difference.total_seconds()/60
@@ -85,14 +85,13 @@ for i in range(len(rows)):
             person2last = nextrow[4].strip()
 
             add_connection(person1first, person1last, person2first, person2last)
-        
-            
+
+
         nextone += 1
 
 
 
-    
-#print(adjmatrix)
+
 
 
 
@@ -121,6 +120,8 @@ def get_department(name) :
 
     return department, title
 
+
+# Returns the colors of the node based onn the indidual's department
 def get_color_for_department(department) :
     department_colors = {
         "Information Technology" : "#EE4B28",
@@ -129,13 +130,23 @@ def get_color_for_department(department) :
         "Security" : "#E628EE",
         "Facilities" : "#E0EE28",
         }
-    if department in department_colors : 
+    if department in department_colors :
         return department_colors[department]
     else:
         return '#E5E5E5'
-            
 
-    
+
+## A function to remove links that are weak
+def subtract_from_links(linksdicts, subtractint) :
+    ret = []
+    for link in linksdicts:
+        link["value"] -= subtractint
+        if link["value"] > 0:
+            ret.append(link)
+    return ret
+
+
+
 peopledicts = []
 
 for person in adjmatrix :
@@ -163,20 +174,15 @@ for person in adjmatrix :
             linksdicts.append(outdict)
 
 ret = {"nodes" : peopledicts,
-       "links" : linksdicts }
+       "links" : subtract_from_links(linksdicts, 200) }
 
 
-with open("sample.json", "w") as outfile:
+with open("data/network.json", "w") as outfile:
     json.dump(ret, outfile)
 
-print(ret)
+#print(ret)
 
 
 # If the last place and this place are the same
 #
 # Link the two people
-#
-
-# TODO: NEED TO MAKE IT SO THERE CAN BE 3 WAY CONNECTIONS
-# KEEP GOING DOWN UNTIL YOU ARE PAST THE TIME INTERVAL
-
