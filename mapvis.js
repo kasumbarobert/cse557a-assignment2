@@ -80,7 +80,8 @@ d3.json("data/business_locations.json").then(function(locations){
             .bindTooltip(locations[x].name, 
             {
                 direction: 'right',
-                riseOnHover: true
+                riseOnHover: true,
+                permanent: true
             }
         ).addTo(map);
     }
@@ -115,8 +116,6 @@ function displayEmployeeDetails(){
     //capture the employee list selection
     carId = document.getElementById('employees_list').value
     i = carId
-
-    
     var employee_details_div =  d3.select("#employee_details")
     employee_details_div.selectAll("p").remove()
     if (carId != "all"){
@@ -248,6 +247,12 @@ function displayRoutesFromDept(){
         department_employees_layer.addTo(map)
 }
 function displayALlRoutes(start_time, end_time){
+        department = document.getElementById('departments_list').value
+        console.log(department)
+        if (department != "all"){
+             displayRoutesFromDept()
+             return ;
+        }
         all_employees_ids_layer_group.clearLayers()
         loc_start_time = new Date(start_time)
         loc_end_time = new Date(end_time)

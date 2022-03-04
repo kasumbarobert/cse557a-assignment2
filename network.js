@@ -16,10 +16,10 @@ var heightL1 = svgNetHeightLO - marginsL1.top - marginsL1.bottom;
 var linkWidthScale = d3.scaleLinear()
 .range([1, 10]);
 var linkStrengthScale = d3.scaleLinear()
-.range([0, 0.5]);
+.range([0, 0.1]);
 var drag
 
-//load the employee 
+//load the employee data
 d3.json("data/network.json").then(function (network){
                 var svg = d3.select("#friends-network").append("svg")
                 .attr("height",svgNetHeightLO )
@@ -28,11 +28,13 @@ d3.json("data/network.json").then(function (network){
                 .attr("id","friends-network-svg-g")
                 .attr('transform', 'translate(' + marginsL1.top + ',' + marginsL1.left + ')');
           
+                //add an id to all nodes
                 nodes = network.nodes
                 nodes.forEach(function(part, index) {
                     this[index].id = this[index].name.replace(" ","_");
                     }, nodes)
 
+                //modify the source and target to match the id instead of names
                 links = network.links
                 links.forEach(function(part, index) {
                 
@@ -43,10 +45,10 @@ d3.json("data/network.json").then(function (network){
 
 
                 linkWidthScale.domain(d3.extent(links, function(d) {
-                    return d.value;
+                    return d.value*0.01;
                 }));
                 linkStrengthScale.domain(d3.extent(links, function(d) {
-                    return d.value;
+                    return d.value*0.01;
                 }));
                 link = svg.selectAll(".link")
                     .data(links)
@@ -97,7 +99,7 @@ d3.json("data/network.json").then(function (network){
                                 return d.id;
                             })
                     .strength(function(d) {
-                        return linkStrengthScale(d.value * 0.2);
+                        return linkStrengthScale(d.value * 0.1);
                     })
                     );
                     simulation.nodes(nodes)
