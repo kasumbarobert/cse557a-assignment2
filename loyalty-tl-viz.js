@@ -1,3 +1,4 @@
+// this code handles the drawing of the loyalty data visualization
 const svgWidthLO = 800;
 const svgHeightLO = 800;
 const marginsLO = {top: 20, right: 50, bottom: 150, left: 50};
@@ -83,16 +84,7 @@ function loUpdate(lodata) {
             //.log("moused over")
         })
         .on("mouseout", function(d) {
-            // var name = ""
-            // var division = ""
-            // var title = ""
-            // var price = ""
-            // var revenue = ""
-            // document.getElementById("cc-name").innerHTML = "Name: " + name;
-            // document.getElementById("cc-price").innerHTML = "Price: " + price;
-            // document.getElementById("cc-revenue").innerHTML = "Total revenue: $" + revenue;
-            // document.getElementById("cc-division").innerHTML = "Division: " + division;
-            // document.getElementById("cc-title").innerHTML = "Title: " + title;
+          
         })
         function xAxis(g) {
             g.attr("transform", function(d) {
@@ -143,4 +135,3 @@ function loChangeData() {
 }
 
 document.getElementById("lometric-select").addEventListener("change", loChangeData)
-// document.getElementById("pmetric").addEventListener("change", changeData)

@@ -1,8 +1,7 @@
-//This Network graph based on https://bl.ocks.org/martinjc/e4c013dab1fabb2e02e2ee3bc6e1b49d
+//This Network graph based on the sample at https://bl.ocks.org/martinjc/e4c013dab1fabb2e02e2ee3bc6e1b49d
 
-// the network visualizes employees who visited the same place in the two. 
-// a link only exists between two employees if they went to the same place with in a span of 10 minutes
-
+// the network visualizes employees who visited the same place 
+// a link only exists between two employees if they went to the same place with in a span of 10 minutes for more than 200 times
 
 var nodesLinked = {};
 const svgNetWidthLO = 900;
@@ -16,7 +15,7 @@ var heightL1 = svgNetHeightLO - marginsL1.top - marginsL1.bottom;
 var linkWidthScale = d3.scaleLinear()
 .range([1, 10]);
 var linkStrengthScale = d3.scaleLinear()
-.range([0, 0.1]);
+.range([0, 0.45]);
 var drag
 
 //load the employee data
@@ -45,10 +44,10 @@ d3.json("data/network.json").then(function (network){
 
 
                 linkWidthScale.domain(d3.extent(links, function(d) {
-                    return d.value*0.01;
+                    return d.value*0.1;
                 }));
                 linkStrengthScale.domain(d3.extent(links, function(d) {
-                    return d.value*0.01;
+                    return d.value*0.1;
                 }));
                 link = svg.selectAll(".link")
                     .data(links)
@@ -72,7 +71,7 @@ d3.json("data/network.json").then(function (network){
                     .attr("fill", function(d) {
                         return d.color;
                     })
-                    .on("mouseover", mouseOver(0.1))
+                    .on("mouseover", mouseOver(0.4))
                     .on("mouseout", mouseOut);
 
                 node.append("title")
@@ -91,6 +90,8 @@ d3.json("data/network.json").then(function (network){
                     .style("fill", function(d) {
                         return d.color;
                     });
+
+                //define and start force simulation 
                 var simulation = d3.forceSimulation()
                     .force("charge", d3.forceManyBody().strength(-10))
                     .force('center', d3.forceCenter(widthL1 / 2, heightL1 / 2))
@@ -99,7 +100,7 @@ d3.json("data/network.json").then(function (network){
                                 return d.id;
                             })
                     .strength(function(d) {
-                        return linkStrengthScale(d.value * 0.1);
+                        return linkStrengthScale(d.value );
                     })
                     );
                     simulation.nodes(nodes)
@@ -111,13 +112,14 @@ d3.json("data/network.json").then(function (network){
                     nodesLinked[d.source.id + "_" + d.target.id] = 1;
                 });
 
+                //add drag event to the node. \
                 drag = d3.drag().on('drag', handleDrag);
                 node.call(drag)
             
             })
 
     function handleDrag(d){
-        console.log("Drag called")
+        // this function updates the position of the nodes being dragged
         if (d.x < 0) {
             d.subject.x = 0
         } else if (d.x > widthL1) {
@@ -134,17 +136,17 @@ d3.json("data/network.json").then(function (network){
         else{
             d.subject.y = d.y
         };;
-        
-
         d3.select(this).call(drag)
-        //console.log(d.subject.y, d.y,heightL1)
     
     }
-           
+    
+    //called as the force simulation is running
     function ticked(){
             link.attr("d", rePositionLink);
             node.attr("transform", rePositionNode);
     }
+
+    //update the start and end position of the link as the node moves
     function rePositionLink(d) {
             var offset = 5;
             var midpoint_x = (d.source.x + d.target.x) / 2;
@@ -162,6 +164,7 @@ d3.json("data/network.json").then(function (network){
                 "S" + offSetX + "," + offSetY +
                 " " + d.target.x + "," + d.target.y;
 }
+    //update the node position as the simulation runs
     function rePositionNode(d) {
             pos_x =d.x
             pos_y = d.y
@@ -183,10 +186,12 @@ d3.json("data/network.json").then(function (network){
 
             return "translate(" + pos_x + "," + pos_y + ")";
         }
+    //checks if there is a link between any two nodes
     function hasLink(a, b) {
         return nodesLinked[a.id + "_" + b.id] || nodesLinked[b.id + "_" + a.id] || a.id == b.id;
     }
 
+    //disable links and gray out nodes that are not connected to the node that is hoovered
     function mouseOver(opacity) {
         return function(d) {
             node.style("stroke-opacity", function(o) {
@@ -197,6 +202,8 @@ d3.json("data/network.json").then(function (network){
                 thisOpacity = hasLink(d.srcElement.__data__, o) ? 1 : opacity;
                 return thisOpacity;
             });
+
+            //gray out the links not connected to the hoovered node
             link.style("stroke-opacity", function(o) {
                 return o.source === d || o.target === d ? 1 : opacity;
             });
@@ -206,13 +213,10 @@ d3.json("data/network.json").then(function (network){
         };
     }
 
+    //reset the node and link colors ("ungray") after the mouse leaves a node
     function mouseOut() {
         node.style("stroke-opacity", 1);
         node.style("fill-opacity", 1);
         link.style("stroke-opacity", 1);
         link.style("stroke", "#ddd");
     }   
-
-    function dragStart(d) {
-        d.fixed = true;
-      }

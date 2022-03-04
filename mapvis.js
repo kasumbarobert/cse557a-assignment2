@@ -137,6 +137,7 @@ function updateRoutes(){
 
     // display routes if "all employees" is selected
     if (carId =="all"){
+        console.log("here")
         displayALlRoutes(start_time, end_time) // displays all employee routes greyed
         //reset the map layers to avoid overlapp
         single_employee_layer_group.clearLayers()
@@ -195,6 +196,7 @@ function updateRoutes(){
 function displayRoutesFromDept(){
         //capture the department
         department = document.getElementById('departments_list').value
+        console.log("Here")
         //clear layers to avoid overlap
         department_employees_layer.clearLayers()
         single_employee_layer_group.clearLayers()
@@ -251,7 +253,7 @@ function displayALlRoutes(start_time, end_time){
         console.log(department)
         if (department != "all"){
              displayRoutesFromDept()
-             return ;
+             return 1;
         }
         all_employees_ids_layer_group.clearLayers()
         loc_start_time = new Date(start_time)
